@@ -1,39 +1,22 @@
 FROM composer:2 as composer
 
-FROM php:8-fpm
+FROM php:8.0-fpm
 
+RUN apt update \
+    && apt install -y zlib1g-dev g++ git libicu-dev zip libzip-dev zip \
+    && docker-php-ext-install intl opcache pdo pdo_mysql \
+    && pecl install apcu \
+    && docker-php-ext-enable apcu \
+    && docker-php-ext-configure zip \
+    && docker-php-ext-install zip
 
-RUN docker-php-ext-install pdo_mysql
-
-RUN pecl install apcu
-
-RUN apt-get update && \
-apt-get install -y \
-libzip-dev
-
-RUN docker-php-ext-install zip
-RUN docker-php-ext-enable apcu
+WORKDIR /var/www/trainer
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-
-WORKDIR /usr/src/app
-
-COPY --chown=1000:1000 . /usr/src/app
-
-RUN PATH=$PATH:/usr/src/app/vendor/bin:bin
-
-RUN composer install --no-scripts --prefer-dist \
-  && rm -rf "$(composer config cache-dir)" "$(composer config data-dir)"
-
-ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
-
-RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
-    install-php-extensions amqp
-
-RUN apt-get update && \
-      apt-get -y install sudo
-
-RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
+RUN curl -sS https://get.symfony.com/cli/installer | bash
+RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
+RUN git config --global user.email "koszykarz.kuba@gmail.com" \ \
+    && git config --global user.name "everwhatever"
 
 
