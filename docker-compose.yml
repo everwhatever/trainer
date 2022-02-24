@@ -9,6 +9,7 @@ services:
         MYSQL_DATABASE: trainer_docker
         MYSQL_USER: admin
         MYSQL_PASSWORD: admin123
+        TZ: Europe/London
       ports:
         - '4306:3306'
       volumes:
