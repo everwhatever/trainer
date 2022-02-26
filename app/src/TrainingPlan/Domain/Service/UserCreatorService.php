@@ -19,8 +19,13 @@ class UserCreatorService
 
     public function createUser(string $email, string $plainPassword): User
     {
-        //TODO: hash
-//        $password = $this->passwordHasher->hashPassword($plainPassword);
-//        $user = User::create($email, $password);
+        $user = new User($email);
+        $password = $this->passwordHasher->hashPassword($user, $plainPassword);
+        $user->setPassword($password);
+
+        $this->entityManager->persist($user);
+        $this->entityManager->flush();
+
+        return $user;
     }
 }

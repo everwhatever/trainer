@@ -5,20 +5,31 @@ namespace App\TrainingPlan\UI\Controller;
 use App\TrainingPlan\Application\Message\Command\UserCreationMessage;
 use App\TrainingPlan\Domain\Model\User;
 use App\TrainingPlan\Infrastructure\Form\RegisterType;
+use App\TrainingPlan\Infrastructure\Security\SecurityAuthenticator;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Messenger\MessageBusInterface;
 use Symfony\Component\Messenger\Stamp\HandledStamp;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface;
 
 class RegistrationController extends AbstractController
 {
     private MessageBusInterface $commandBus;
 
-    public function __construct(MessageBusInterface $commandBus)
+    private UserAuthenticatorInterface $authenticator;
+
+    private SecurityAuthenticator $securityAuthenticator;
+
+    public function __construct(MessageBusInterface        $commandBus,
+                                UserAuthenticatorInterface $authenticator,
+                                SecurityAuthenticator      $securityAuthenticator
+    )
     {
         $this->commandBus = $commandBus;
+        $this->authenticator = $authenticator;
+        $this->securityAuthenticator = $securityAuthenticator;
     }
 
     /**
@@ -31,10 +42,16 @@ class RegistrationController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $user = $this->command($form->getData()['email'], $form->get('plainPassword')->getData());
+
+            return $this->authenticator->authenticateUser(
+                $user,
+                $this->securityAuthenticator,
+                $request
+            );
         }
 
         return $this->render('training_plan/security/register.html.twig', [
-            'form' => $form
+            'form' => $form->createView()
         ]);
     }
 

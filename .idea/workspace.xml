@@ -2,24 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Handler/Command/UserCreationHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Message/Command/UserCreationMessage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/UserCreatorService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/RegisterType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/trainer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trainer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/training_plan/security/register.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/messenger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/messenger.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/validator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/validator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/web_profiler.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routes/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes/web_profiler.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/Version20220224055152.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20220224055152.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Handler/Command/UserCreationHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Handler/Command/UserCreationHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Message/Command/UserCreationMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Message/Command/UserCreationMessage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/HomepageAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/HomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/UserCreatorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/UserCreatorService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/RegisterType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/RegisterType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/HomepageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/training_plan/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/training_plan/homepage.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000008" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000008" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/user.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
     </list>
@@ -34,6 +40,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/UserCreatorService.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Application/Handler/Command/UserCreationHandler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Application/Message/Command/UserCreationMessage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/RegistrationController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/User.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/packages/messenger.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/packages/security.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/RegisterType.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -122,12 +138,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/templates/training_plan/security" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -137,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645768222197</updated>
-      <workItem from="1645768223349" duration="3442000" />
+      <workItem from="1645768223349" duration="6577000" />
     </task>
     <servers />
   </component>

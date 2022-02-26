@@ -2,7 +2,7 @@
 
 namespace App\TrainingPlan\Domain\Model;
 
-use App\Repository\UserRepository;
+use App\TrainingPlan\Infrastructure\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -36,15 +36,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private string $password;
 
-    private function __construct(string $email, string $password)
+    public function __construct(string $email)
     {
         $this->email = $email;
-        $this->password = $password;
-    }
-
-    public static function create(string $email, string $password): self
-    {
-        return new self($email, $password);
     }
 
     public function getId(): ?int
@@ -55,6 +49,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function getEmail(): ?string
     {
         return $this->email;
+    }
+
+    public function setPassword(string $password): void
+    {
+        $this->password = $password;
     }
 
     /**
