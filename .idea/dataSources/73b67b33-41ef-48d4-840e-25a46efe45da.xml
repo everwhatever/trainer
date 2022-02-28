@@ -937,17 +937,33 @@ trainer\\_docker|schema||admin||UPDATE|G</Grants>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="287" parent="278" name="UNIQ_8D93D649E7927C74">
+    <column id="287" parent="278" name="first_name">
+      <DataType>varchar(180)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="288" parent="278" name="last_name">
+      <DataType>varchar(180)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="289" parent="278" name="address">
+      <DataType>varchar(350)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="290" parent="278" name="phone_number">
+      <DataType>int|0s</DataType>
+      <Position>8</Position>
+    </column>
+    <index id="291" parent="278" name="UNIQ_8D93D649E7927C74">
       <ColNames>email</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="288" parent="278" name="PRIMARY">
+    <key id="292" parent="278" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="289" parent="278" name="UNIQ_8D93D649E7927C74">
+    <key id="293" parent="278" name="UNIQ_8D93D649E7927C74">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>UNIQ_8D93D649E7927C74</UnderlyingIndexName>
     </key>

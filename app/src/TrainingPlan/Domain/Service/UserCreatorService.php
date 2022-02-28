@@ -17,11 +17,12 @@ class UserCreatorService
         $this->passwordHasher = $passwordHasher;
     }
 
-    public function createUser(string $email, string $plainPassword): User
+    public function createUser(string $email, string $plainPassword, string $role): User
     {
         $user = new User($email);
         $password = $this->passwordHasher->hashPassword($user, $plainPassword);
         $user->setPassword($password);
+        $user->setRole($role);
 
         $this->entityManager->persist($user);
         $this->entityManager->flush();

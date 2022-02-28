@@ -55,9 +55,32 @@ class RegistrationController extends AbstractController
         ]);
     }
 
-    private function command(string $email, string $plainPassword): User
+    /**
+     * @Route("/register/admin", name="register_admin")
+     */
+    public function registerAdminAction(Request $request): Response
     {
-        $message = new UserCreationMessage($email, $plainPassword);
+        $form = $this->createForm(RegisterType::class);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $user = $this->command($form->getData()['email'], $form->get('plainPassword')->getData(), 'ROLE_ADMIN');
+
+            return $this->authenticator->authenticateUser(
+                $user,
+                $this->securityAuthenticator,
+                $request
+            );
+        }
+
+        return $this->render('training_plan/security/register.html.twig', [
+            'form' => $form->createView()
+        ]);
+    }
+
+    private function command(string $email, string $plainPassword, ?string $role = 'ROLE_USER'): User
+    {
+        $message = new UserCreationMessage($email, $plainPassword, $role);
         $envelope = $this->commandBus->dispatch($message);
         /** @var HandledStamp $handledStamp */
         $handledStamp = $envelope->last(HandledStamp::class);

@@ -23,7 +23,27 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @ORM\Column(type="string", length=180, unique=true)
      */
-    private ?string $email;
+    private string $email;
+
+    /**
+     * @ORM\Column(type="string", length=180, nullable="true")
+     */
+    private ?string $firstName;
+
+    /**
+     * @ORM\Column(type="string", length=180, nullable="true")
+     */
+    private ?string $lastName;
+
+    /**
+     * @ORM\Column(type="string", length=350, nullable="true")
+     */
+    private ?string $address;
+
+    /**
+     * @ORM\Column(type="integer", nullable="true")
+     */
+    private ?int $phoneNumber;
 
     /**
      * @ORM\Column(type="json")
@@ -78,12 +98,60 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return array_unique($roles);
     }
 
+    public function setRole(string $role): void
+    {
+        $roles = $this->roles;
+        $roles[] = $role;
+
+        $this->roles = array_unique($roles);
+    }
+
     /**
      * @see PasswordAuthenticatedUserInterface
      */
     public function getPassword(): string
     {
         return $this->password;
+    }
+
+    public function getFirstName(): ?string
+    {
+        return $this->firstName;
+    }
+
+    public function setFirstName(?string $firstName): void
+    {
+        $this->firstName = $firstName;
+    }
+
+    public function getLastName(): ?string
+    {
+        return $this->lastName;
+    }
+
+    public function setLastName(?string $lastName): void
+    {
+        $this->lastName = $lastName;
+    }
+
+    public function getAddress(): ?string
+    {
+        return $this->address;
+    }
+
+    public function setAddress(?string $address): void
+    {
+        $this->address = $address;
+    }
+
+    public function getPhoneNumber(): ?int
+    {
+        return $this->phoneNumber;
+    }
+
+    public function setPhoneNumber(?int $phoneNumber): void
+    {
+        $this->phoneNumber = $phoneNumber;
     }
 
     /**
