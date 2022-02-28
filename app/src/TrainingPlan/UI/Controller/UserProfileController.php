@@ -45,11 +45,20 @@ class UserProfileController extends AbstractController
         $form = $this->createForm(EditUserProfileType::class, $user);
         $form->handleRequest($request);
 
-        //TODO: finish this
+        //TODO: move to CQRS AND add phoneNumber, email, name itp valueObject
         if ($form->isSubmitted() && $form->isValid()) {
+            /** @var User $user */
+            $user = $form->getData();
+            $this->entityManager->persist($user);
+            $this->entityManager->flush();
 
+            return $this->redirectToRoute('user_profile', ['id' => $user->getId()]);
         }
 
-        return $this->render();
+        return $this->render('training_plan/user/user_profile_edit.html.twig', [
+            'form' => $form->createView()
+        ]);
     }
+
+
 }

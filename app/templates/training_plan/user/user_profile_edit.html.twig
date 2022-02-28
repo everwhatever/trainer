@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <br>
+    <div class="container">
+        {{ form_start(form) }}
+        {{ form_end(form) }}
+        <a href="{{ path('user_profile_edit',{'id':app.user.getId()}) }}" class="btn btn-danger">Usuń profil</a>
+        <a href="{{ path('user_profile_edit',{'id':app.user.getId()}) }}" class="btn btn-warning">Zmień hasło</a>
+    </div>
+
+
+{% endblock %}

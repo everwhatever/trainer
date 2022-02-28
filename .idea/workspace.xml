@@ -2,38 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/UserProfileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/training_plan/user/user_profile.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/73b67b33-41ef-48d4-840e-25a46efe45da.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/73b67b33-41ef-48d4-840e-25a46efe45da.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/training_plan/user/user_profile_edit.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Handler/Command/UserCreationHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Handler/Command/UserCreationHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Message/Command/UserCreationMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Message/Command/UserCreationMessage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/UserCreatorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/UserCreatorService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/training_plan/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/training_plan/homepage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/EditUserProfileType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/EditUserProfileType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/UserProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/UserProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/training_plan/user/user_profile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/training_plan/user/user_profile.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000008" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000008" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000009" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000009" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibtmp1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/user.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645768222197</updated>
       <workItem from="1645768223349" duration="8321000" />
-      <workItem from="1646026258236" duration="2838000" />
+      <workItem from="1646026258236" duration="6238000" />
     </task>
     <servers />
   </component>

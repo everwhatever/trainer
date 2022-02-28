@@ -4,13 +4,6 @@
     <div class="container">
         <h2 style="text-align: center">Twoje dane</h2><br>
         <table class="table table-striped">
-{#            <thead>#}
-{#            <tr>#}
-{#                <th>Imię</th>#}
-{#                <th>Lastname</th>#}
-{#                <th>Email</th>#}
-{#            </tr>#}
-{#            </thead>#}
             <tbody>
             <tr>
                 <td>Imię</td>
@@ -34,10 +27,9 @@
             </tr>
             </tbody>
         </table>
-        <button type="button" class="btn btn-primary">Edytuj profil</button>
-        <button type="button" class="btn btn-danger">Usuń profil</button>
-        <button type="button" class="btn btn-warning">Zmień hasło</button>
-
+        <a href="{{ path('user_profile_edit',{'id':app.user.getId()}) }}" class="btn btn-primary">Edytuj dane</a>
+        <a href="{{ path('user_profile_edit',{'id':app.user.getId()}) }}" class="btn btn-danger">Usuń profil</a>
+        <a href="{{ path('user_profile_edit',{'id':app.user.getId()}) }}" class="btn btn-warning">Zmień hasło</a>
     </div>
 
 
