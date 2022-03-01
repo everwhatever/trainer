@@ -45,7 +45,6 @@ class UserProfileController extends AbstractController
         $form = $this->createForm(EditUserProfileType::class, $user);
         $form->handleRequest($request);
 
-        //TODO: move to CQRS AND add phoneNumber, email, name itp valueObject
         if ($form->isSubmitted() && $form->isValid()) {
             /** @var User $user */
             $user = $form->getData();
@@ -60,5 +59,16 @@ class UserProfileController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/user/{id}/profile/delete", name="user_profile_delete")
+     */
+    public function deleteUser(int $id): Response
+    {
+        $user = $this->entityManager->getRepository(User::class)->findOneBy(['id' => $id]);
+        $this->entityManager->remove($user);
+        $this->entityManager->flush();
+
+        return $this->redirectToRoute('homepage');
+    }
 
 }

@@ -5,6 +5,7 @@ namespace App\TrainingPlan\Infrastructure\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
@@ -28,6 +29,10 @@ class RegisterType extends AbstractType
                         'max' => 4096,
                     ]),
                 ],
-            ]);;
+                'label' => 'Hasło'
+            ])
+            ->add('submit', SubmitType::class, [
+                'label' => 'Zarejestruj się'
+            ]);
     }
 }

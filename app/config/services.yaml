@@ -39,5 +39,9 @@ services:
         autoconfigure: false
         tags: [ { name: messenger.message_handler, bus: query.bus } ]
 
+    App\TrainingPlan\Infrastructure\EventListener\VerifyEmailListener:
+        tags:
+            - { name: verify_email_listener, method: verifyEmail, event: verify_email }
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

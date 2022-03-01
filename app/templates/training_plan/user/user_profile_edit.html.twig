@@ -4,7 +4,7 @@
     <div class="container">
         {{ form_start(form) }}
         {{ form_end(form) }}
-        <a href="{{ path('user_profile_edit',{'id':app.user.getId()}) }}" class="btn btn-danger">Usuń profil</a>
+        <a href="{{ path('user_profile_delete',{'id':app.user.getId()}) }}" onclick="return confirm('Na pewno chcesz usunąć profil?')" class="btn btn-danger">Usuń profil</a>
         <a href="{{ path('user_profile_edit',{'id':app.user.getId()}) }}" class="btn btn-warning">Zmień hasło</a>
     </div>
 
