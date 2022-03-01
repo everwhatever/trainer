@@ -1,14 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\TrainingPlan\Domain\Service;
 
 use App\TrainingPlan\Application\Event\VerifyEmailEvent;
 use App\TrainingPlan\Domain\Model\User;
 use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Component\EventDispatcher\EventDispatcher;
-use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
-use SymfonyCasts\Bundle\VerifyEmail\VerifyEmailHelperInterface;
 
 class UserCreatorService
 {
@@ -16,11 +16,15 @@ class UserCreatorService
 
     private UserPasswordHasherInterface $passwordHasher;
 
-    public function __construct(EntityManagerInterface $entityManager,
-                                UserPasswordHasherInterface $passwordHasher)
+    private EventDispatcherInterface $eventDispatcher;
+
+    public function __construct(EntityManagerInterface      $entityManager,
+                                UserPasswordHasherInterface $passwordHasher,
+                                EventDispatcherInterface    $eventDispatcher)
     {
         $this->entityManager = $entityManager;
         $this->passwordHasher = $passwordHasher;
+        $this->eventDispatcher = $eventDispatcher;
     }
 
     public function createUser(string $email, string $plainPassword, string $role): User
@@ -33,10 +37,13 @@ class UserCreatorService
         $this->entityManager->persist($user);
         $this->entityManager->flush();
 
-        //TODO: naprawić event
-        $eventDispatcher = new EventDispatcher();
-        $eventDispatcher->dispatch(new VerifyEmailEvent($email), VerifyEmailEvent::NAME);
+        $this->sendVerificationEmail($email, (string) $user->getId());
 
         return $user;
+    }
+
+    private function sendVerificationEmail(string $email, string $userId): void
+    {
+        $this->eventDispatcher->dispatch(new VerifyEmailEvent($email, $userId), VerifyEmailEvent::NAME);
     }
 }

@@ -5,24 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Event/VerifyEmailEvent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/EventListener/VerifyEmailListener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/trainer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trainer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/training_plan/security/confirmation_email.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Event/VerifyEmailEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Event/VerifyEmailEvent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/UserCreatorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/UserCreatorService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/RegisterType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/RegisterType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/UserProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/UserProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/training_plan/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/training_plan/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/training_plan/security/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/training_plan/security/register.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/training_plan/user/user_profile.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/training_plan/user/user_profile.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/training_plan/user/user_profile_edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/training_plan/user/user_profile_edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/EventListener/VerifyEmailListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/EventSubscriber/VerifyEmailSubscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/RegistrationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/binlog.000009" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000009" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
@@ -170,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645768222197</updated>
       <workItem from="1645768223349" duration="8321000" />
-      <workItem from="1646026258236" duration="11309000" />
+      <workItem from="1646026258236" duration="14388000" />
     </task>
     <servers />
   </component>

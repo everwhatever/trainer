@@ -1,20 +1,32 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\TrainingPlan\Application\Event;
 
-class VerifyEmailEvent
+use Symfony\Contracts\EventDispatcher\Event;
+
+class VerifyEmailEvent extends Event
 {
-    public const NAME = 'verify_email';
+    public const NAME = 'user.email_verified';
 
-    private string $email;
+    private string $userEmail;
 
-    public function __construct(string $email)
+    private string $userId;
+
+    public function __construct(string $userEmail, string $userId)
     {
-        $this->email = $email;
+        $this->userEmail = $userEmail;
+        $this->userId = $userId;
     }
 
-    public function getEmail(): string
+    public function getUserEmail(): string
     {
-        return $this->email;
+        return $this->userEmail;
+    }
+
+    public function getUserId(): string
+    {
+        return $this->userId;
     }
 }
