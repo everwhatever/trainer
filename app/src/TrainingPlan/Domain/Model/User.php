@@ -56,6 +56,11 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private string $password;
 
+    /**
+     * @ORM\Column(type="boolean", options={"default":false})
+     */
+    private bool $verified = false;
+
     public function __construct(string $email)
     {
         $this->email = $email;
@@ -152,6 +157,16 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setPhoneNumber(?int $phoneNumber): void
     {
         $this->phoneNumber = $phoneNumber;
+    }
+
+    public function isVerified(): bool
+    {
+        return $this->verified;
+    }
+
+    public function setVerified(bool $verified = false): void
+    {
+        $this->verified = $verified;
     }
 
     /**

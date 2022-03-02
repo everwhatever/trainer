@@ -54,9 +54,10 @@ class VerifyEmailSubscriber implements EventSubscriberInterface
     private function prepareEmailTemplate(string $userEmail, VerifyEmailSignatureComponents $signatureComponents): TemplatedEmail
     {
         $email = new TemplatedEmail();
-        $email->from('koszykarz.kuba@gmail.com');
+        $email->from('11jakub.jackob12@gmail.com');
         $email->to($userEmail);
-        $email->htmlTemplate('security/confirmation_email.html.twig');
+        $email->subject("Weryfikacja email-a");
+        $email->htmlTemplate('training_plan/security/confirmation_email.html.twig');
         $email->context(['signedUrl' => $signatureComponents->getSignedUrl()]);
 
         return $email;

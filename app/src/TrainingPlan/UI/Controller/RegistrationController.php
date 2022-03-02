@@ -89,20 +89,22 @@ class RegistrationController extends AbstractController
      */
     public function verifyUserEmail(Request $request): Response
     {
+        // TODO: move to CQRS
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+        /** @var User $user */
         $user = $this->getUser();
 
         try {
             $this->verifyEmailHelper->validateEmailConfirmation($request->getUri(), $user->getId(), $user->getEmail());
         } catch (VerifyEmailExceptionInterface $e) {
-            $this->addFlash('verify_email_error', $e->getReason());
+            $this->addFlash('warning', $e->getReason());
 
             return $this->redirectToRoute('register');
         }
 
-        // TODO: Mark your user as verified. e.g. switch a User::verified property to true
+        $user->setVerified(true);
 
-        $this->addFlash('success', 'Your e-mail address has been verified.');
+        $this->addFlash('success', 'Weryfikacja przebiegła poprawnie.');
 
         return $this->redirectToRoute('homepage');
     }

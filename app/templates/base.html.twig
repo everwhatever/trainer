@@ -38,6 +38,13 @@
     </nav>
 {% endif %}
 
+{% for label, messages in app.flashes(['success', 'warning']) %}
+    {% for message in messages %}
+        <div class="alert alert-{{ label }}" role="alert">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endfor %}
 
 
 {% block body %}{% endblock %}
