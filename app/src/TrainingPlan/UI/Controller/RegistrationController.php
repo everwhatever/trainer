@@ -1,7 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\TrainingPlan\UI\Controller;
 
+use App\TrainingPlan\Application\Message\Command\EmailVerificationMessage;
 use App\TrainingPlan\Application\Message\Command\UserCreationMessage;
 use App\TrainingPlan\Domain\Model\User;
 use App\TrainingPlan\Infrastructure\Form\RegisterType;
@@ -13,8 +16,6 @@ use Symfony\Component\Messenger\MessageBusInterface;
 use Symfony\Component\Messenger\Stamp\HandledStamp;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface;
-use SymfonyCasts\Bundle\VerifyEmail\Exception\VerifyEmailExceptionInterface;
-use SymfonyCasts\Bundle\VerifyEmail\VerifyEmailHelperInterface;
 
 class RegistrationController extends AbstractController
 {
@@ -24,18 +25,14 @@ class RegistrationController extends AbstractController
 
     private SecurityAuthenticator $securityAuthenticator;
 
-    private VerifyEmailHelperInterface $verifyEmailHelper;
-
     public function __construct(MessageBusInterface        $commandBus,
                                 UserAuthenticatorInterface $authenticator,
                                 SecurityAuthenticator      $securityAuthenticator,
-                                VerifyEmailHelperInterface $verifyEmailHelper
     )
     {
         $this->commandBus = $commandBus;
         $this->authenticator = $authenticator;
         $this->securityAuthenticator = $securityAuthenticator;
-        $this->verifyEmailHelper = $verifyEmailHelper;
     }
 
     /**
@@ -47,7 +44,7 @@ class RegistrationController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $user = $this->command($form->getData()['email'], $form->get('plainPassword')->getData());
+            $user = $this->registerCommand($form->getData()['email'], $form->get('plainPassword')->getData());
 
             return $this->authenticator->authenticateUser(
                 $user,
@@ -70,7 +67,7 @@ class RegistrationController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $user = $this->command($form->getData()['email'], $form->get('plainPassword')->getData(), 'ROLE_ADMIN');
+            $user = $this->registerCommand($form->getData()['email'], $form->get('plainPassword')->getData(), 'ROLE_ADMIN');
 
             return $this->authenticator->authenticateUser(
                 $user,
@@ -89,27 +86,18 @@ class RegistrationController extends AbstractController
      */
     public function verifyUserEmail(Request $request): Response
     {
-        // TODO: move to CQRS
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         /** @var User $user */
         $user = $this->getUser();
 
-        try {
-            $this->verifyEmailHelper->validateEmailConfirmation($request->getUri(), $user->getId(), $user->getEmail());
-        } catch (VerifyEmailExceptionInterface $e) {
-            $this->addFlash('warning', $e->getReason());
-
-            return $this->redirectToRoute('register');
-        }
-
-        $user->setVerified(true);
+        $this->verifyEmailCommand($request->getUri(), (string) $user->getId(), $user->getEmail());
 
         $this->addFlash('success', 'Weryfikacja przebiegła poprawnie.');
 
         return $this->redirectToRoute('homepage');
     }
 
-    private function command(string $email, string $plainPassword, ?string $role = 'ROLE_USER'): User
+    private function registerCommand(string $email, string $plainPassword, ?string $role = 'ROLE_USER'): User
     {
         $message = new UserCreationMessage($email, $plainPassword, $role);
         $envelope = $this->commandBus->dispatch($message);
@@ -117,5 +105,11 @@ class RegistrationController extends AbstractController
         $handledStamp = $envelope->last(HandledStamp::class);
 
         return $handledStamp->getResult();
+    }
+
+    private function verifyEmailCommand(string $requestUri, string $userId, string $userEmail): void
+    {
+        $message = new EmailVerificationMessage($requestUri, $userId, $userEmail);
+        $this->commandBus->dispatch($message);
     }
 }
