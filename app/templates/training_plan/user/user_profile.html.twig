@@ -29,7 +29,7 @@
         </table>
         <a href="{{ path('user_profile_edit',{'id':app.user.getId()}) }}" class="btn btn-primary">Edytuj dane</a>
         <a href="{{ path('user_profile_delete',{'id':app.user.getId()}) }}" onclick="return confirm('Na pewno chcesz usunąć profil?')" class="btn btn-danger">Usuń profil</a>
-        <a href="{{ path('user_profile_edit',{'id':app.user.getId()}) }}" class="btn btn-warning">Zmień hasło</a>
+        <a href="{{ path('app_forgot_password_request') }}" class="btn btn-warning">Zmień hasło</a>
     </div>
 
 
