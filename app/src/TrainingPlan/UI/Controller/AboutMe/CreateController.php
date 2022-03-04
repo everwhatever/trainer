@@ -36,7 +36,7 @@ class CreateController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $formData = $form->getData();
-            $this->command($form->get('photo')->getData(), $formData['title'], $formData['description']);
+            $this->command($form->get('photo')->getData(), $formData->getTitle(), $formData->getDescription());
 
             return $this->redirectToRoute('about_me_display');
         }
