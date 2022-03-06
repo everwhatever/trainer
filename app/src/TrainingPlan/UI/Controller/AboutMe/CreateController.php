@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\TrainingPlan\UI\Controller\AboutMe;
 
 use App\TrainingPlan\Application\Message\Command\AboutMeCreationMessage;
-use App\TrainingPlan\Application\Message\Command\UserCreationMessage;
+use App\TrainingPlan\Domain\Model\AboutMe;
 use App\TrainingPlan\Infrastructure\Form\AboutMeType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -35,10 +35,10 @@ class CreateController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $formData = $form->getData();
-            $this->command($form->get('photo')->getData(), $formData->getTitle(), $formData->getDescription());
+            $aboutMe = $form->getData();
+            $this->command($form->get('photo')->getData(), $aboutMe);
 
-            return $this->redirectToRoute('about_me_display');
+            return $this->redirectToRoute('about_me_display', ['id' => $aboutMe->getId()]);
         }
 
         return $this->render('training_plan/about_me/about_me_edit.html.twig', [
@@ -46,9 +46,9 @@ class CreateController extends AbstractController
         ]);
     }
 
-    private function command(File $photo, string $title, string $description): void
+    private function command(File $photo, AboutMe $aboutMe): void
     {
-        $message = new AboutMeCreationMessage($photo, $title, $description);
+        $message = new AboutMeCreationMessage($photo, $aboutMe);
         $this->commandBus->dispatch($message);
     }
 }

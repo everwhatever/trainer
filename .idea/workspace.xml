@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/AboutMeCreatorService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/uploads/photo/pobrane-62223d7d690e9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Handler/Command/AboutMeCreationHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Handler/Command/AboutMeCreationHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Message/Command/AboutMeCreationMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Application/Message/Command/AboutMeCreationMessage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/AboutMeCreatorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/AboutMeCreatorService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/CreateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/CreateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/EditController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/EditController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/about_me.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/about_me.ibd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

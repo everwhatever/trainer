@@ -4,21 +4,19 @@ declare(strict_types=1);
 
 namespace App\TrainingPlan\Application\Message\Command;
 
+use App\TrainingPlan\Domain\Model\AboutMe;
 use Symfony\Component\HttpFoundation\File\File;
 
 class AboutMeCreationMessage
 {
     private File $photo;
 
-    private string $title;
+    private AboutMe $aboutMe;
 
-    private string $description;
-
-    public function __construct(File $photo, string $title, string $description)
+    public function __construct(File $photo, AboutMe $aboutMe)
     {
         $this->photo = $photo;
-        $this->title = $title;
-        $this->description = $description;
+        $this->aboutMe = $aboutMe;
     }
 
     public function getPhoto(): File
@@ -26,13 +24,8 @@ class AboutMeCreationMessage
         return $this->photo;
     }
 
-    public function getTitle(): string
+    public function getAboutMe(): AboutMe
     {
-        return $this->title;
-    }
-
-    public function getDescription(): string
-    {
-        return $this->description;
+        return $this->aboutMe;
     }
 }

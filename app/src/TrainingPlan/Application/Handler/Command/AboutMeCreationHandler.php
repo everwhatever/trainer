@@ -20,9 +20,8 @@ class AboutMeCreationHandler implements MessageHandlerInterface
     public function __invoke(AboutMeCreationMessage $message): void
     {
         $photo = $message->getPhoto();
-        $title = $message->getTitle();
-        $description = $message->getDescription();
+        $aboutMe = $message->getAboutMe();
 
-        $this->aboutMeCreator->create($photo, $title, $description);
+        $this->aboutMeCreator->create($photo, $aboutMe);
     }
 }

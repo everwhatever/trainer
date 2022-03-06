@@ -25,15 +25,21 @@ class AboutMeCreatorService
         $this->photoDirectory = $photoDirectory;
     }
 
-    public function create(File $photo, string $title, string $description): void
+    public function create(File $photo, AboutMe $aboutMe): void
     {
-        $aboutMe = new AboutMe();
-        $aboutMe->setTitle($title);
-        $aboutMe->setDescription($description);
+        $newFilename = $this->preparePhotoFilename($photo);
 
+        $aboutMe->setPhotoFilename($newFilename);
+
+        $this->entityManager->persist($aboutMe);
+        $this->entityManager->flush();
+    }
+
+    private function preparePhotoFilename(File $photo): string
+    {
         $originalFilename = pathinfo($photo->getClientOriginalName(), PATHINFO_FILENAME);
         $safeFilename = $this->slugger->slug($originalFilename);
-        $newFilename = $safeFilename.'-'.uniqid().'.'.$photo->guessExtension();
+        $newFilename = $safeFilename . '-' . uniqid() . '.' . $photo->guessExtension();
 
         try {
             $photo->move(
@@ -44,6 +50,6 @@ class AboutMeCreatorService
             throw new FileException($e->getMessage());
         }
 
-        $aboutMe->setPhotoFilename($newFilename);
+        return $newFilename;
     }
 }
