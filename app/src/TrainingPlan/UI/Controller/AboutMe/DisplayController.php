@@ -14,24 +14,38 @@ class DisplayController extends AbstractController
 {
     private EntityManagerInterface $entityManager;
 
-    public function __construct(EntityManagerInterface $entityManager)
+    private string $shortPhotoDir;
+
+    public function __construct(EntityManagerInterface $entityManager, string $shortPhotoDir)
     {
         $this->entityManager = $entityManager;
+        $this->shortPhotoDir = $shortPhotoDir;
     }
 
     /**
-     * @Route("/about-me/display/{id}", name="about_me_display")
+     * @Route("/about-me/display", name="about_me_display_one")
      */
-    public function displayAction(int $id): Response
+    public function displayOneAction(): Response
     {
         /** @var AboutMe $aboutMe */
-        $aboutMe = $this->entityManager->getRepository(AboutMe::class)->findOneBy(['id' => $id]);
-        $photoDir = $this->getParameter('photo_directory');
+        $aboutMe = $this->entityManager->getRepository(AboutMe::class)->findOneBy(['isActive' => true]);
 
-        return $this->render('training_plan/about_me/about_me_display.html.twig', [
+        return $this->render('training_plan/about_me/about_me_display_one.html.twig', [
             'title' => $aboutMe->getTitle(),
             'description' => $aboutMe->getDescription(),
-            'photo_filename' => $photoDir . '/' . $aboutMe->getPhotoFilename()
+            'photo_dir' => $this->shortPhotoDir . $aboutMe->getPhotoFilename()
+        ]);
+    }
+
+    /**
+     * @Route("/about-me/display/all", name="about_me_display_all")
+     */
+    public function displayAllAction(): Response
+    {
+        $aboutMeList = $this->entityManager->getRepository(AboutMe::class)->findAll();
+
+        return $this->render('training_plan/about_me/about_me_display_all.html.twig', [
+            'aboutMeList' => $aboutMeList,
         ]);
     }
 }

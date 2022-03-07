@@ -35,56 +35,53 @@ class AboutMe
      */
     private string $description;
 
+    /**
+     * @ORM\Column(type="boolean", options={"default":false})
+     */
+    private bool $isActive;
+
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getPhotoFilename(): string
     {
         return $this->photoFilename;
     }
 
-    /**
-     * @param string $photoFilename
-     */
     public function setPhotoFilename(string $photoFilename): void
     {
         $this->photoFilename = $photoFilename;
     }
 
-    /**
-     * @return string|null
-     */
     public function getTitle(): string
     {
         return $this->title;
     }
 
-    /**
-     * @param string|null $title
-     */
     public function setTitle(string $title): void
     {
         $this->title = $title;
     }
 
-    /**
-     * @return string|null
-     */
     public function getDescription(): string
     {
         return $this->description;
     }
 
-    /**
-     * @param string|null $description
-     */
     public function setDescription(string $description): void
     {
         $this->description = $description;
+    }
+
+    public function isActive(): bool
+    {
+        return $this->isActive;
+    }
+
+    public function setIsActive(bool $isActive): void
+    {
+        $this->isActive = $isActive;
     }
 }

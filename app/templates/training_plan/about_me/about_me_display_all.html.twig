@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+        <h2>O mnie, templatki</h2>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Tytuł</th>
+                <th>Aktywny</th>
+                <th>Akcje</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for aboutMe in aboutMeList %}
+                <tr>
+                    <td>{{ aboutMe.title }}</td>
+                    <td>{{ aboutMe.active ? 'Tak':'Nie' }}</td>
+                    <td><a href="{{ path('aboute_me_edit',{'id':aboutMe.getId()}) }}">Edytuj</a></td>
+                </tr>
+            {% endfor %}
+
+            </tbody>
+        </table>
+{% endblock %}

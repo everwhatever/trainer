@@ -42,7 +42,7 @@ class EditController extends AbstractController
             $aboutMe = $form->getData();
             $this->command($form->get('photo')->getData(), $aboutMe);
 
-            return $this->redirectToRoute('about_me_display', ['id' => $aboutMe->getId()]);
+            return $this->redirectToRoute('about_me_display_one');
         }
 
         return $this->render('training_plan/about_me/about_me_edit.html.twig', [

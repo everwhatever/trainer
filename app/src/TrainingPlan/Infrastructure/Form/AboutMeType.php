@@ -6,6 +6,7 @@ namespace App\TrainingPlan\Infrastructure\Form;
 
 use App\TrainingPlan\Domain\Model\AboutMe;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -37,6 +38,9 @@ class AboutMeType extends AbstractType
             ])
             ->add('description', TextareaType::class, [
                 'label' => 'Opis',
+            ])
+            ->add('isActive', CheckboxType::class, [
+                'label' => 'Ustaw jak aktywny'
             ])
             ->add('submit', SubmitType::class, [
                 'label' => 'Zapisz'
