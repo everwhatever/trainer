@@ -890,137 +890,167 @@ trainer\\_docker|schema||admin||UPDATE|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="276" parent="1" name="admin"/>
-    <table id="277" parent="275" name="doctrine_migration_versions">
+    <table id="277" parent="275" name="about_me">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_unicode_ci</CollationName>
+    </table>
+    <table id="278" parent="275" name="doctrine_migration_versions">
       <Engine>InnoDB</Engine>
       <CollationName>utf8_unicode_ci</CollationName>
     </table>
-    <table id="278" parent="275" name="reset_password_request">
+    <table id="279" parent="275" name="reset_password_request">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_unicode_ci</CollationName>
     </table>
-    <table id="279" parent="275" name="user">
+    <table id="280" parent="275" name="user">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_unicode_ci</CollationName>
     </table>
-    <column id="280" parent="277" name="version">
-      <DataType>varchar(191)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="281" parent="277" name="executed_at">
-      <DataType>datetime|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="282" parent="277" name="execution_time">
-      <DataType>int|0s</DataType>
-      <Position>3</Position>
-    </column>
-    <key id="283" parent="277" name="PRIMARY">
-      <ColNames>version</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="284" parent="278" name="id">
+    <column id="281" parent="277" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="285" parent="278" name="user_id">
-      <DataType>int|0s</DataType>
+    <column id="282" parent="277" name="photo_filename">
+      <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="286" parent="278" name="selector">
-      <DataType>varchar(20)|0s</DataType>
+    <column id="283" parent="277" name="title">
+      <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="287" parent="278" name="hashed_token">
-      <DataType>varchar(100)|0s</DataType>
+    <column id="284" parent="277" name="description">
+      <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="288" parent="278" name="requested_at">
-      <Comment>(DC2Type:datetime_immutable)</Comment>
-      <DataType>datetime|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <column id="289" parent="278" name="expires_at">
-      <Comment>(DC2Type:datetime_immutable)</Comment>
-      <DataType>datetime|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-    </column>
-    <foreign-key id="290" parent="278" name="FK_7CE748AA76ED395">
-      <ColNames>user_id</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>user</RefTableName>
-    </foreign-key>
-    <index id="291" parent="278" name="IDX_7CE748AA76ED395">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="292" parent="278" name="PRIMARY">
+    <key id="285" parent="277" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="293" parent="279" name="id">
+    <column id="286" parent="278" name="version">
+      <DataType>varchar(191)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="287" parent="278" name="executed_at">
+      <DataType>datetime|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="288" parent="278" name="execution_time">
+      <DataType>int|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <key id="289" parent="278" name="PRIMARY">
+      <ColNames>version</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="290" parent="279" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="294" parent="279" name="email">
+    <column id="291" parent="279" name="user_id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="292" parent="279" name="selector">
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="293" parent="279" name="hashed_token">
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="294" parent="279" name="requested_at">
+      <Comment>(DC2Type:datetime_immutable)</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="295" parent="279" name="expires_at">
+      <Comment>(DC2Type:datetime_immutable)</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="296" parent="279" name="FK_7CE748AA76ED395">
+      <ColNames>user_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>user</RefTableName>
+    </foreign-key>
+    <index id="297" parent="279" name="IDX_7CE748AA76ED395">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="298" parent="279" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="299" parent="280" name="id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="300" parent="280" name="email">
       <DataType>varchar(180)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="295" parent="279" name="roles">
+    <column id="301" parent="280" name="roles">
       <DataType>json|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="296" parent="279" name="password">
+    <column id="302" parent="280" name="password">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="297" parent="279" name="first_name">
+    <column id="303" parent="280" name="first_name">
       <DataType>varchar(180)|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="298" parent="279" name="last_name">
+    <column id="304" parent="280" name="last_name">
       <DataType>varchar(180)|0s</DataType>
       <Position>6</Position>
     </column>
-    <column id="299" parent="279" name="address">
+    <column id="305" parent="280" name="address">
       <DataType>varchar(350)|0s</DataType>
       <Position>7</Position>
     </column>
-    <column id="300" parent="279" name="phone_number">
+    <column id="306" parent="280" name="phone_number">
       <DataType>int|0s</DataType>
       <Position>8</Position>
     </column>
-    <column id="301" parent="279" name="verified">
+    <column id="307" parent="280" name="verified">
       <DataType>tinyint(1)|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
-    <index id="302" parent="279" name="UNIQ_8D93D649E7927C74">
+    <index id="308" parent="280" name="UNIQ_8D93D649E7927C74">
       <ColNames>email</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="303" parent="279" name="PRIMARY">
+    <key id="309" parent="280" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="304" parent="279" name="UNIQ_8D93D649E7927C74">
+    <key id="310" parent="280" name="UNIQ_8D93D649E7927C74">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>UNIQ_8D93D649E7927C74</UnderlyingIndexName>
     </key>
