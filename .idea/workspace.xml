@@ -5,29 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display_one.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/trainer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trainer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/doctrine.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/AboutMe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/AboutMe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/AboutMeType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/AboutMeType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/CreateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/CreateController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/EditController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/EditController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display_all.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000013" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000013" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/about_me.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/about_me.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/doctrine_migration_versions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/doctrine_migration_versions.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,26 +35,26 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/Security/RegistrationController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/AboutMeCreatorService.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Application/Message/Command/AboutMeCreationMessage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/migrations/Version20220304064837.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/CreateController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/config/packages/messenger.yaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/EditController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/config/packages/security.yaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/UserCreatorService.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Application/Handler/Command/UserCreationHandler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/AboutMe.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/AboutMeCreatorService.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/packages/security.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/CreateController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/EditController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/UserCreatorService.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Application/Handler/Command/UserCreationHandler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display_one.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/config/packages/reset_password.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/templates/training_plan/homepage.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Application/Message/Command/UserCreationMessage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display_one.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/services.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20220304064837.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/packages/doctrine_migrations.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/config/packages/messenger.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Repository/Security/ResetPasswordRequestRepository.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/Security/RegisterType.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/config/services.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/User.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/config/packages/doctrine_migrations.yaml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -171,7 +155,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/training_plan/about_me" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/Blog/Application/Message" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.templates" />
@@ -179,6 +163,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/Blog/Application/Message" />
       <recent name="$PROJECT_DIR$/app/templates/training_plan/about_me" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -195,7 +180,7 @@
       <updated>1645768222197</updated>
       <workItem from="1645768223349" duration="8321000" />
       <workItem from="1646026258236" duration="24745000" />
-      <workItem from="1646589031779" duration="5590000" />
+      <workItem from="1646589031779" duration="7651000" />
     </task>
     <servers />
   </component>
@@ -212,5 +197,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="shelve" />
+    <option name="LAST_COMMIT_MESSAGE" value="shelve" />
   </component>
 </project>

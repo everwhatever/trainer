@@ -6,6 +6,7 @@ namespace App\TrainingPlan\UI\Controller\AboutMe;
 
 use App\TrainingPlan\Domain\Model\AboutMe;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -39,6 +40,7 @@ class DisplayController extends AbstractController
 
     /**
      * @Route("/about-me/display/all", name="about_me_display_all")
+     * @IsGranted("ROLE_ADMIN")
      */
     public function displayAllAction(): Response
     {

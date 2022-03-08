@@ -16,6 +16,12 @@ doctrine:
                 dir: '%kernel.project_dir%/src/TrainingPlan/Domain/Model'
                 prefix: 'App\TrainingPlan\Domain\Model'
                 alias: TrainingPlan
+            Blog:
+                is_bundle: false
+                type: annotation
+                dir: '%kernel.project_dir%/src/Blog/Domain/Model'
+                prefix: 'App\Blog\Domain\Model'
+                alias: TrainingPlan
 
 when@test:
     doctrine:
