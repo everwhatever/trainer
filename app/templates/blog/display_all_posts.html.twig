@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h2>Posty</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Tytuł</th>
+            <th>Aktywny</th>
+            <th>Akcje</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for post in posts %}
+            <tr>
+                <td>{{ post.title }}</td>
+                <td>{{ post.active ? 'Tak':'Nie' }}</td>
+                <td><a href="{{ path('blog_display_one_post',{'id':post.getId()}) }}">Czytaj</a></td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+{% endblock %}
