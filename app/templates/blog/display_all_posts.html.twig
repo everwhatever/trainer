@@ -5,16 +5,20 @@
         <thead>
         <tr>
             <th>Tytuł</th>
-            <th>Aktywny</th>
             <th>Akcje</th>
+            {% if is_granted("ROLE_ADMIN") %}
+            <th>Akcje Admina</th>
+            {% endif %}
         </tr>
         </thead>
         <tbody>
         {% for post in posts %}
             <tr>
                 <td>{{ post.title }}</td>
-                <td>{{ post.active ? 'Tak':'Nie' }}</td>
                 <td><a href="{{ path('blog_display_one_post',{'id':post.getId()}) }}">Czytaj</a></td>
+                {% if is_granted("ROLE_ADMIN") %}
+                    <td><a href="{{ path('blog_edit_post',{'id':post.getId()}) }}">Edytuj</a></td>
+                {% endif %}
             </tr>
         {% endfor %}
 

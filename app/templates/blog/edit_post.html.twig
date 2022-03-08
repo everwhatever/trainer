@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}POST{% endblock %}
+
+{% block body %}
+    Edycja
+    {{ form_start(form) }}
+
+    {{ form_end(form) }}
+
+    <a href="{{ path('blog_delete_post',{'id': postId}) }}" onclick="return confirm('Na pewno chcesz usunąć post?')" class="btn btn-danger">Usuń post</a>
+{% endblock %}

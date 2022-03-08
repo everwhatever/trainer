@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Blog/Application/Handler/Command/PostCreationHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Blog/Application/Message/Command/PostCreationMessage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Blog/Infrastructure/Form/CreatePostType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/CreatePostController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/DisplayController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/blog/create_post.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/blog/display_all_posts.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/blog/display_one.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/DeletePostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/EditPostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/blog/edit_post.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/blog/display_all_posts.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/blog/display_all_posts.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
