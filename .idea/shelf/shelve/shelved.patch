@@ -1,0 +1,240 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"2de641c5-2a28-4bfa-a650-0ffe190e1a95\" name=\"Changes\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display_one.html.twig\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/php.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/php.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/trainer.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/trainer.iml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/composer.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/composer.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/composer.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/composer.lock\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/config/services.yaml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/config/services.yaml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/AboutMe.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/AboutMe.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/AboutMeType.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/AboutMeType.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/CreateController.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/CreateController.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/EditController.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/EditController.php\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/symfony.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/symfony.lock\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display.html.twig\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display_all.html.twig\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/mysql/#ib_16384_0.dblwr\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mysql/#ib_16384_0.dblwr\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/mysql/binlog.000013\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mysql/binlog.000013\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/mysql/ib_logfile0\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mysql/ib_logfile0\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/mysql/ibdata1\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mysql/ibdata1\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/mysql/mysql.ibd\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mysql/mysql.ibd\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/mysql/trainer_docker/about_me.ibd\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mysql/trainer_docker/about_me.ibd\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/mysql/trainer_docker/doctrine_migration_versions.ibd\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mysql/trainer_docker/doctrine_migration_versions.ibd\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/mysql/undo_001\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mysql/undo_001\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/mysql/undo_002\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/mysql/undo_002\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\" doNotAsk=\"true\" synchronizationState=\"SYNCHRONIZE\">\n    <pharConfigPath>$PROJECT_DIR$/app/composer.json</pharConfigPath>\n    <execution />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitSEFilterConfiguration\">\n    <file-type-list>\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\n      <filtered-out-file-type name=\"TAG\" />\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\n    </file-type-list>\n  </component>\n  <component name=\"HighlightingSettingsPerFile\">\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/Security/RegistrationController.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/AboutMeCreatorService.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/Application/Message/Command/AboutMeCreationMessage.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/migrations/Version20220304064837.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/CreateController.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/config/packages/messenger.yaml\" root0=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/EditController.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/config/packages/security.yaml\" root0=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/Domain/Service/UserCreatorService.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/Application/Handler/Command/UserCreationHandler.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/AboutMe.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/config/packages/reset_password.yaml\" root0=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/templates/training_plan/homepage.html.twig\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/Application/Message/Command/UserCreationMessage.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display_one.html.twig\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Repository/Security/ResetPasswordRequestRepository.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/Security/RegisterType.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/config/services.yaml\" root0=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/User.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"file://$PROJECT_DIR$/app/config/packages/doctrine_migrations.yaml\" root0=\"FORCE_HIGHLIGHTING\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"PhpWorkspaceProjectConfiguration\">\n    <include_path>\n      <path value=\"$PROJECT_DIR$/app/vendor/friendsofphp/proxy-manager-lts\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/property-access\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/security-bundle\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/password-hasher\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/property-info\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/security-core\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/security-csrf\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/security-http\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/proxy-manager-bridge\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/maker-bundle\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/doctrine-bridge\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/stopwatch\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/lexer\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/collections\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/annotations\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/nikic/php-parser\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/doctrine-bundle\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/instantiator\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/doctrine-migrations-bundle\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/orm\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/dbal\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/twig-bundle\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/migrations\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/sql-formatter\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/translation-contracts\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/cache\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/twig-bridge\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/persistence\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/composer\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/inflector\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/event-manager\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/deprecations\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/sensio/framework-extra-bundle\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/doctrine/common\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/psr/container\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/psr/event-dispatcher\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/psr/log\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/var-exporter\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/psr/cache\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-normalizer\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/http-kernel\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/twig/twig\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/event-dispatcher\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/polyfill-mbstring\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/laminas/laminas-code\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/deprecation-contracts\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/twig/extra-bundle\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/http-foundation\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/service-contracts\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/polyfill-php81\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/dependency-injection\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/error-handler\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/filesystem\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/finder\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/dotenv\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/var-dumper\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/routing\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/runtime\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/cache\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-grapheme\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/string\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/flex\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/console\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/cache-contracts\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/event-dispatcher-contracts\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/yaml\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/framework-bundle\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/config\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/web-profiler-bundle\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/form\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-icu\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/options-resolver\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/validator\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/messenger\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfonycasts/verify-email-bundle\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/egulias/email-validator\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/mailer\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/polyfill-intl-idn\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/mime\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/google-mailer\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfonycasts/reset-password-bundle\" />\n      <path value=\"$PROJECT_DIR$/app/vendor/symfony/asset\" />\n    </include_path>\n  </component>\n  <component name=\"ProjectId\" id=\"25abcFOodUjZbXMpK7BGIG2Y2sC\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"DatabaseDriversLRU\" value=\"mysql\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/app/templates/training_plan/about_me\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"php.override.implement.member.chooser.php.doc\" value=\"NONE\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"settings.php.debug.templates\" />\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/app/templates/training_plan/about_me\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/app/templates/training_plan/security\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"2de641c5-2a28-4bfa-a650-0ffe190e1a95\" name=\"Changes\" comment=\"\" />\n      <created>1645768222197</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1645768222197</updated>\n      <workItem from=\"1645768223349\" duration=\"8321000\" />\n      <workItem from=\"1646026258236\" duration=\"24745000\" />\n      <workItem from=\"1646589031779\" duration=\"5590000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f9aa2ccab9eb3528ebb37b1052c020f9019d92d7)
++++ b/.idea/workspace.xml	(date 1646728108051)
+@@ -5,29 +5,13 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display_one.html.twig" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/trainer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trainer.iml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/doctrine.yaml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/AboutMe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Domain/Model/AboutMe.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/AboutMeType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/Infrastructure/Form/AboutMeType.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/CreateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/CreateController.php" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/EditController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/TrainingPlan/UI/Controller/AboutMe/EditController.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/training_plan/about_me/about_me_display_all.html.twig" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000013" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000013" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/about_me.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/about_me.ibd" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/doctrine_migration_versions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/doctrine_migration_versions.ibd" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -171,7 +155,7 @@
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates/training_plan/about_me" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/Blog/Application/Message" />
+     <property name="nodejs_package_manager_path" value="npm" />
+     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+     <property name="settings.editor.selected.configurable" value="settings.php.debug.templates" />
+@@ -179,6 +163,7 @@
+   </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/app/src/Blog/Application/Message" />
+       <recent name="$PROJECT_DIR$/app/templates/training_plan/about_me" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
+@@ -195,7 +180,7 @@
+       <updated>1645768222197</updated>
+       <workItem from="1645768223349" duration="8321000" />
+       <workItem from="1646026258236" duration="24745000" />
+-      <workItem from="1646589031779" duration="5590000" />
++      <workItem from="1646589031779" duration="7651000" />
+     </task>
+     <servers />
+   </component>
+Index: app/templates/base.html.twig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">\n    <script\n            src=\"https://code.jquery.com/jquery-2.2.4.min.js\"\n            integrity=\"sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=\"\n            crossorigin=\"anonymous\"></script>\n    <title>{% block title %}Trening whey!{% endblock %}</title>\n    {% block stylesheets %}\n\n    {% endblock %}\n\n    {% block javascripts %}{% endblock %}\n</head>\n<body>\n{% if is_granted(\"ROLE_USER\") %}\n    <nav class=\"nav nav-pills flex-column flex-sm-row\">\n        <a class=\"flex-sm-fill text-sm-center nav-link active\" href=\"{{ path('homepage') }}\">Strona główna</a>\n        <a class=\"flex-sm-fill text-sm-center nav-link\" href=\"{{ path('user_profile',{'id':app.user.getId()}) }}\">Mój profil</a>\n{#        <a class=\"flex-sm-fill text-sm-center nav-link\" href=\"{{ path('app_all_drivers') }}\">Kierowcy</a>#}\n{#        <a class=\"flex-sm-fill text-sm-center nav-link\" href=\"{{ path('app_all_races') }}\">Wyścigi</a>#}\n{#        <a class=\"flex-sm-fill text-sm-center nav-link\" href=\"{{ path('league_display_all') }}\">Ligi</a>#}\n        <a class=\"flex-sm-fill text-sm-center nav-link\" href=\"{{ path('app_logout') }}\">Wyloguj się</a>\n{#        {% if is_granted(\"ROLE_ADMIN\") %}#}\n{#            <a class=\"flex-sm-fill text-sm-center nav-link\" href=\"{{ path('league_create') }}\">Stwórz ligę</a>#}\n{#        {% endif %}#}\n    </nav>\n{% else %}\n    <nav class=\"nav nav-pills flex-column flex-sm-row\">\n        <a class=\"flex-sm-fill text-sm-center nav-link active\" href=\"{{ path('homepage') }}\">Strona główna</a>\n{#        <a class=\"flex-sm-fill text-sm-center nav-link\" href=\"{{ path('app_all_drivers') }}\">Kierowcy</a>#}\n{#        <a class=\"flex-sm-fill text-sm-center nav-link\" href=\"{{ path('app_all_races') }}\">Wyścigi</a>#}\n{#        <a class=\"flex-sm-fill text-sm-center nav-link\" href=\"{{ path('league_display_all') }}\">Ligi</a>#}\n        <a class=\"flex-sm-fill text-sm-center nav-link\" href=\"{{ path('app_login') }}\">Zaloguj się</a>\n        <a class=\"flex-sm-fill text-sm-center nav-link\" href=\"{{ path('register') }}\">Zarejestruj się</a>\n    </nav>\n{% endif %}\n\n{% for label, messages in app.flashes(['success', 'warning']) %}\n    {% for message in messages %}\n        <div class=\"alert alert-{{ label }}\" role=\"alert\">\n            {{ message }}\n        </div>\n    {% endfor %}\n{% endfor %}\n\n<div class=\"container\" style=\"margin-top: 3%\">\n    {% block body %}{% endblock %}\n</div>\n</body>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/templates/base.html.twig b/app/templates/base.html.twig
+--- a/app/templates/base.html.twig	(revision f9aa2ccab9eb3528ebb37b1052c020f9019d92d7)
++++ b/app/templates/base.html.twig	(date 1646727590682)
+@@ -7,6 +7,9 @@
+             src="https://code.jquery.com/jquery-2.2.4.min.js"
+             integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+             crossorigin="anonymous"></script>
++    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
++    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
++    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <title>{% block title %}Trening whey!{% endblock %}</title>
+     {% block stylesheets %}
+ 
+@@ -16,21 +19,30 @@
+ </head>
+ <body>
+ {% if is_granted("ROLE_USER") %}
+-    <nav class="nav nav-pills flex-column flex-sm-row">
++    <nav class="nav nav-pills flex-column flex-sm-row" style="width: 100%">
+         <a class="flex-sm-fill text-sm-center nav-link active" href="{{ path('homepage') }}">Strona główna</a>
+         <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('user_profile',{'id':app.user.getId()}) }}">Mój profil</a>
+-{#        <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('app_all_drivers') }}">Kierowcy</a>#}
++        <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('about_me_display_one') }}">O mnie</a>
+ {#        <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('app_all_races') }}">Wyścigi</a>#}
+ {#        <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('league_display_all') }}">Ligi</a>#}
+         <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('app_logout') }}">Wyloguj się</a>
+-{#        {% if is_granted("ROLE_ADMIN") %}#}
+-{#            <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('league_create') }}">Stwórz ligę</a>#}
+-{#        {% endif %}#}
++        {% if is_granted("ROLE_ADMIN") %}
++{#            <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('about_me_display_all') }}">Linki Admina</a>#}
++            <div class="dropdown">
++                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Linki Admina
++                    <span class="caret"></span></button>
++                <ul class="dropdown-menu">
++                    <li><a href="{{ path('about_me_display_all') }}">Edycja O Mnie</a></li>
++                    <li><a href="#">Edycja Bloga</a></li>
++                    <li><a href="#">-</a></li>
++                </ul>
++            </div>
++        {% endif %}
+     </nav>
+ {% else %}
+     <nav class="nav nav-pills flex-column flex-sm-row">
+         <a class="flex-sm-fill text-sm-center nav-link active" href="{{ path('homepage') }}">Strona główna</a>
+-{#        <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('app_all_drivers') }}">Kierowcy</a>#}
++        <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('about_me_display_one') }}">O mnie</a>
+ {#        <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('app_all_races') }}">Wyścigi</a>#}
+ {#        <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('league_display_all') }}">Ligi</a>#}
+         <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('app_login') }}">Zaloguj się</a>
+Index: app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\n\ndeclare(strict_types=1);\n\nnamespace App\\TrainingPlan\\UI\\Controller\\AboutMe;\n\nuse App\\TrainingPlan\\Domain\\Model\\AboutMe;\nuse Doctrine\\ORM\\EntityManagerInterface;\nuse Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController;\nuse Symfony\\Component\\HttpFoundation\\Response;\nuse Symfony\\Component\\Routing\\Annotation\\Route;\n\nclass DisplayController extends AbstractController\n{\n    private EntityManagerInterface $entityManager;\n\n    private string $shortPhotoDir;\n\n    public function __construct(EntityManagerInterface $entityManager, string $shortPhotoDir)\n    {\n        $this->entityManager = $entityManager;\n        $this->shortPhotoDir = $shortPhotoDir;\n    }\n\n    /**\n     * @Route(\"/about-me/display\", name=\"about_me_display_one\")\n     */\n    public function displayOneAction(): Response\n    {\n        /** @var AboutMe $aboutMe */\n        $aboutMe = $this->entityManager->getRepository(AboutMe::class)->findOneBy(['isActive' => true]);\n\n        return $this->render('training_plan/about_me/about_me_display_one.html.twig', [\n            'title' => $aboutMe->getTitle(),\n            'description' => $aboutMe->getDescription(),\n            'photo_dir' => $this->shortPhotoDir . $aboutMe->getPhotoFilename()\n        ]);\n    }\n\n    /**\n     * @Route(\"/about-me/display/all\", name=\"about_me_display_all\")\n     */\n    public function displayAllAction(): Response\n    {\n        $aboutMeList = $this->entityManager->getRepository(AboutMe::class)->findAll();\n\n        return $this->render('training_plan/about_me/about_me_display_all.html.twig', [\n            'aboutMeList' => $aboutMeList,\n        ]);\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php b/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php
+--- a/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php	(revision f9aa2ccab9eb3528ebb37b1052c020f9019d92d7)
++++ b/app/src/TrainingPlan/UI/Controller/AboutMe/DisplayController.php	(date 1646727000652)
+@@ -6,6 +6,7 @@
+ 
+ use App\TrainingPlan\Domain\Model\AboutMe;
+ use Doctrine\ORM\EntityManagerInterface;
++use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+ use Symfony\Component\HttpFoundation\Response;
+ use Symfony\Component\Routing\Annotation\Route;
+@@ -39,6 +40,7 @@
+ 
+     /**
+      * @Route("/about-me/display/all", name="about_me_display_all")
++     * @IsGranted("ROLE_ADMIN")
+      */
+     public function displayAllAction(): Response
+     {
+Index: app/config/services.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># This file is the entry point to configure your own services.\n# Files in the packages/ subdirectory configure your dependencies.\n\n# Put parameters here that don't need to change on each machine where the app is deployed\n# https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration\nparameters:\n    photo_directory: '%kernel.project_dir%/public/uploads/photo'\n\nservices:\n    # default configuration for services in *this* file\n    _defaults:\n        autowire: true      # Automatically injects dependencies in your services.\n        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.\n        bind:\n            $photoDirectory: '%photo_directory%'\n            $shortPhotoDir: 'uploads/photo/'\n\n    # makes classes in src/ available to be used as services\n    # this creates a service per class whose id is the fully-qualified class name\n    App\\TrainingPlan\\Application\\:\n        resource: '../src/TrainingPlan/Application'\n\n    App\\TrainingPlan\\Domain\\:\n        resource: '../src/TrainingPlan/Domain'\n\n    App\\TrainingPlan\\Infrastructure\\:\n        resource: '../src/TrainingPlan/Infrastructure'\n\n    App\\TrainingPlan\\UI\\:\n        resource: '../src/TrainingPlan/UI'\n\n    App\\TrainingPlan\\UI\\Controller\\:\n        resource: '../src/TrainingPlan/UI/Controller'\n        tags: [ 'controller.service_arguments' ]\n\n    App\\TrainingPlan\\Application\\Handler\\Command\\:\n        resource: '../src/TrainingPlan/Application/Handler/Command/'\n        autoconfigure: false\n        tags: [ { name: messenger.message_handler, bus: command.bus } ]\n\n    App\\TrainingPlan\\Application\\Handler\\Query\\:\n        resource: '../src/TrainingPlan/Application/Handler/Query/'\n        autoconfigure: false\n        tags: [ { name: messenger.message_handler, bus: query.bus } ]\n\n    # add more service definitions when explicit configuration is needed\n    # please note that last definitions always *replace* previous ones\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/config/services.yaml b/app/config/services.yaml
+--- a/app/config/services.yaml	(revision f9aa2ccab9eb3528ebb37b1052c020f9019d92d7)
++++ b/app/config/services.yaml	(date 1646728004925)
+@@ -1,13 +1,7 @@
+-# This file is the entry point to configure your own services.
+-# Files in the packages/ subdirectory configure your dependencies.
+-
+-# Put parameters here that don't need to change on each machine where the app is deployed
+-# https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
+ parameters:
+     photo_directory: '%kernel.project_dir%/public/uploads/photo'
+ 
+ services:
+-    # default configuration for services in *this* file
+     _defaults:
+         autowire: true      # Automatically injects dependencies in your services.
+         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+@@ -15,8 +9,7 @@
+             $photoDirectory: '%photo_directory%'
+             $shortPhotoDir: 'uploads/photo/'
+ 
+-    # makes classes in src/ available to be used as services
+-    # this creates a service per class whose id is the fully-qualified class name
++    # TrainingPlan
+     App\TrainingPlan\Application\:
+         resource: '../src/TrainingPlan/Application'
+ 
+@@ -43,5 +36,29 @@
+         autoconfigure: false
+         tags: [ { name: messenger.message_handler, bus: query.bus } ]
+ 
+-    # add more service definitions when explicit configuration is needed
+-    # please note that last definitions always *replace* previous ones
++    # Blog
++    App\Blog\Application\:
++        resource: '../src/Blog/Application'
++
++    App\Blog\Domain\:
++        resource: '../src/Blog/Domain'
++
++    App\Blog\Infrastructure\:
++        resource: '../src/Blog/Infrastructure'
++
++    App\Blog\UI\:
++        resource: '../src/Blog/UI'
++
++    App\Blog\UI\Controller\:
++        resource: '../src/Blog/UI/Controller'
++        tags: [ 'controller.service_arguments' ]
++
++    App\Blog\Application\Handler\Command\:
++        resource: '../src/Blog/Application/Handler/Command/'
++        autoconfigure: false
++        tags: [ { name: messenger.message_handler, bus: command.bus } ]
++
++    App\Blog\Application\Handler\Query\:
++        resource: '../src/Blog/Application/Handler/Query/'
++        autoconfigure: false
++        tags: [ { name: messenger.message_handler, bus: query.bus } ]
+Index: app/config/packages/doctrine.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>doctrine:\n    dbal:\n        url: '%env(resolve:DATABASE_URL)%'\n\n        # IMPORTANT: You MUST configure your server version,\n        # either here or in the DATABASE_URL env var (see .env file)\n        #server_version: '13'\n    orm:\n        auto_generate_proxy_classes: true\n        naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware\n        auto_mapping: true\n        mappings:\n            TrainingPlan:\n                is_bundle: false\n                type: annotation\n                dir: '%kernel.project_dir%/src/TrainingPlan/Domain/Model'\n                prefix: 'App\\TrainingPlan\\Domain\\Model'\n                alias: TrainingPlan\n\nwhen@test:\n    doctrine:\n        dbal:\n            # \"TEST_TOKEN\" is typically set by ParaTest\n            dbname_suffix: '_test%env(default::TEST_TOKEN)%'\n\nwhen@prod:\n    doctrine:\n        orm:\n            auto_generate_proxy_classes: false\n            query_cache_driver:\n                type: pool\n                pool: doctrine.system_cache_pool\n            result_cache_driver:\n                type: pool\n                pool: doctrine.result_cache_pool\n\n    framework:\n        cache:\n            pools:\n                doctrine.result_cache_pool:\n                    adapter: cache.app\n                doctrine.system_cache_pool:\n                    adapter: cache.system\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/config/packages/doctrine.yaml b/app/config/packages/doctrine.yaml
+--- a/app/config/packages/doctrine.yaml	(revision f9aa2ccab9eb3528ebb37b1052c020f9019d92d7)
++++ b/app/config/packages/doctrine.yaml	(date 1646728004941)
+@@ -16,6 +16,12 @@
+                 dir: '%kernel.project_dir%/src/TrainingPlan/Domain/Model'
+                 prefix: 'App\TrainingPlan\Domain\Model'
+                 alias: TrainingPlan
++            Blog:
++                is_bundle: false
++                type: annotation
++                dir: '%kernel.project_dir%/src/Blog/Domain/Model'
++                prefix: 'App\Blog\Domain\Model'
++                alias: TrainingPlan
+ 
+ when@test:
+     doctrine:
