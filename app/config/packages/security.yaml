@@ -3,15 +3,15 @@ security:
     # https://symfony.com/doc/current/security.html#registering-the-user-hashing-passwords
     password_hashers:
         Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
-        App\TrainingPlan\Domain\Model\User:
+        App\User\Domain\Model\User:
             algorithm: auto
 
     # https://symfony.com/doc/current/security.html#loading-the-user-the-user-provider
     providers:
-        # used to reload user from session & other features (e.g. switch_user)
+        # used to reload profile from session & other features (e.g. switch_user)
         app_user_provider:
             entity:
-                class: App\TrainingPlan\Domain\Model\User
+                class: App\User\Domain\Model\User
                 property: email
     firewalls:
         dev:
@@ -20,7 +20,7 @@ security:
         main:
             lazy: true
             provider: app_user_provider
-            custom_authenticator: App\TrainingPlan\Infrastructure\Security\SecurityAuthenticator
+            custom_authenticator: App\User\Infrastructure\Security\SecurityAuthenticator
             logout:
                 path: app_logout
                 # where to redirect after logout

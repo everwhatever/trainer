@@ -9,30 +9,30 @@ services:
             $photoDirectory: '%photo_directory%'
             $shortPhotoDir: 'uploads/photo/'
 
-    # TrainingPlan
-    App\TrainingPlan\Application\:
-        resource: '../src/TrainingPlan/Application'
+    # User
+    App\User\Application\:
+        resource: '../src/User/Application'
 
-    App\TrainingPlan\Domain\:
-        resource: '../src/TrainingPlan/Domain'
+    App\User\Domain\:
+        resource: '../src/User/Domain'
 
-    App\TrainingPlan\Infrastructure\:
-        resource: '../src/TrainingPlan/Infrastructure'
+    App\User\Infrastructure\:
+        resource: '../src/User/Infrastructure'
 
-    App\TrainingPlan\UI\:
-        resource: '../src/TrainingPlan/UI'
+    App\User\UI\:
+        resource: '../src/User/UI'
 
-    App\TrainingPlan\UI\Controller\:
-        resource: '../src/TrainingPlan/UI/Controller'
+    App\User\UI\Controller\:
+        resource: '../src/User/UI/Controller'
         tags: [ 'controller.service_arguments' ]
 
-    App\TrainingPlan\Application\Handler\Command\:
-        resource: '../src/TrainingPlan/Application/Handler/Command/'
+    App\User\Application\Handler\Command\:
+        resource: '../src/User/Application/Handler/Command/'
         autoconfigure: false
         tags: [ { name: messenger.message_handler, bus: command.bus } ]
 
-    App\TrainingPlan\Application\Handler\Query\:
-        resource: '../src/TrainingPlan/Application/Handler/Query/'
+    App\User\Application\Handler\Query\:
+        resource: '../src/User/Application/Handler/Query/'
         autoconfigure: false
         tags: [ { name: messenger.message_handler, bus: query.bus } ]
 

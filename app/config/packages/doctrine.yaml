@@ -10,18 +10,18 @@ doctrine:
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
         auto_mapping: true
         mappings:
-            TrainingPlan:
+            User:
                 is_bundle: false
                 type: annotation
-                dir: '%kernel.project_dir%/src/TrainingPlan/Domain/Model'
-                prefix: 'App\TrainingPlan\Domain\Model'
-                alias: TrainingPlan
+                dir: '%kernel.project_dir%/src/User/Domain/Model'
+                prefix: 'App\User\Domain\Model'
+                alias: User
             Blog:
                 is_bundle: false
                 type: annotation
                 dir: '%kernel.project_dir%/src/Blog/Domain/Model'
                 prefix: 'App\Blog\Domain\Model'
-                alias: TrainingPlan
+                alias: User
 
 when@test:
     doctrine:
