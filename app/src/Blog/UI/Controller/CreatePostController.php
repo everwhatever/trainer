@@ -29,13 +29,14 @@ class CreatePostController extends AbstractController
      */
     public function createAction(Request $request): Response
     {
+        $userId = $this->getUser()->getId();
         $form = $this->createForm(CreatePostType::class);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $post = $form->getData();
 
-            $this->command($post);
+            $this->command($post, $userId);
 
             return $this->redirectToRoute('blog_display_one_post', ['id' => $post->getId()]);
         }
@@ -45,9 +46,9 @@ class CreatePostController extends AbstractController
         ]);
     }
 
-    private function command(Post $post): void
+    private function command(Post $post, int $userId): void
     {
-        $message = new PostCreationMessage($post);
+        $message = new PostCreationMessage($post, $userId);
         $this->commandBus->dispatch($message);
     }
 }

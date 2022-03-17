@@ -10,13 +10,21 @@ class PostCreationMessage
 {
     private Post $post;
 
-    public function __construct(Post $post)
+    private ?int $userId;
+
+    public function __construct(Post $post, ?int $userId = null)
     {
         $this->post = $post;
+        $this->userId = $userId;
     }
 
     public function getPost(): Post
     {
         return $this->post;
+    }
+
+    public function getUserId(): ?int
+    {
+        return $this->userId;
     }
 }

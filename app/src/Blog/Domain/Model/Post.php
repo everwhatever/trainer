@@ -29,6 +29,11 @@ class Post
      */
     private string $content;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private int $authorId;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -52,5 +57,15 @@ class Post
     public function setContent(string $content): void
     {
         $this->content = $content;
+    }
+
+    public function getAuthorId(): int
+    {
+        return $this->authorId;
+    }
+
+    public function setAuthorId(int $authorId): void
+    {
+        $this->authorId = $authorId;
     }
 }
