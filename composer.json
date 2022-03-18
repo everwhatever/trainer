@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "overblog/graphiql-bundle": "^0.3.0"
+    }
+}

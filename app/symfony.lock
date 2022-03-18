@@ -86,11 +86,28 @@
     "laminas/laminas-code": {
         "version": "4.5.1"
     },
+    "murtukov/php-code-generator": {
+        "version": "v0.1.6"
+    },
     "myclabs/deep-copy": {
         "version": "1.11.0"
     },
     "nikic/php-parser": {
         "version": "v4.13.2"
+    },
+    "overblog/graphql-bundle": {
+        "version": "0.14",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.12",
+            "ref": "b122f3bfcfc0706c617a74afa8510af4799810f6"
+        },
+        "files": [
+            "config/graphql/types/.gitignore",
+            "config/packages/graphql.yaml",
+            "config/routes/graphql.yaml"
+        ]
     },
     "phar-io/manifest": {
         "version": "2.0.3"
@@ -211,6 +228,9 @@
             "config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "symfony/amqp-messenger": {
+        "version": "v5.4.5"
+    },
     "symfony/asset": {
         "version": "v6.0.3"
     },
@@ -250,6 +270,9 @@
     "symfony/doctrine-bridge": {
         "version": "v6.0.3"
     },
+    "symfony/doctrine-messenger": {
+        "version": "v5.4.3"
+    },
     "symfony/dom-crawler": {
         "version": "v6.0.6"
     },
@@ -264,6 +287,9 @@
     },
     "symfony/event-dispatcher-contracts": {
         "version": "v3.0.0"
+    },
+    "symfony/expression-language": {
+        "version": "v5.4.3"
     },
     "symfony/filesystem": {
         "version": "v6.0.3"
@@ -404,6 +430,9 @@
     "symfony/proxy-manager-bridge": {
         "version": "v6.0.3"
     },
+    "symfony/redis-messenger": {
+        "version": "v5.4.6"
+    },
     "symfony/routing": {
         "version": "6.0",
         "recipe": {
@@ -437,6 +466,9 @@
     },
     "symfony/security-csrf": {
         "version": "v6.0.3"
+    },
+    "symfony/security-guard": {
+        "version": "v5.4.3"
     },
     "symfony/security-http": {
         "version": "v6.0.3"
@@ -529,5 +561,8 @@
     },
     "webmozart/assert": {
         "version": "1.10.0"
+    },
+    "webonyx/graphql-php": {
+        "version": "v14.11.5"
     }
 }
