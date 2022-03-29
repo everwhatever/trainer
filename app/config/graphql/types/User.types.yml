@@ -1,0 +1,20 @@
+User:
+  type: object
+  config:
+    description: "user data"
+    fields:
+      id:
+        type: Int
+      first_name:
+        type: String
+      last_name:
+        type: String
+      email:
+        type: String
+      address:
+        type: String
+      phone_number:
+        type: Int
+      roles:
+        type: "[String]"
+

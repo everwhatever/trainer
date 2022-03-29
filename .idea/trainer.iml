@@ -124,6 +124,14 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/sebastian/environment" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/sebastian/comparator" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/doctrine/data-fixtures" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/doctrine-messenger" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/redis-messenger" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/amqp-messenger" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/security-guard" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/overblog/graphql-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/murtukov/php-code-generator" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/expression-language" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/webonyx/graphql-php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

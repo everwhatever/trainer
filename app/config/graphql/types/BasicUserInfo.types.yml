@@ -1,0 +1,11 @@
+UserInfo:
+  type: object
+  config:
+    description: "Basic user Info"
+    fields:
+      byId:
+        type: "User"
+        args:
+          userId:
+            type: Int!
+        resolve: "@=query('user_info_resolver', [args], info)"

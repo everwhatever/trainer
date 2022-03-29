@@ -5,6 +5,7 @@ namespace App\User\Infrastructure\Repository;
 use App\User\Domain\Model\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use PDO;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\PasswordUpgraderInterface;
@@ -34,5 +35,28 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         $user->setPassword($newHashedPassword);
         $this->_em->persist($user);
         $this->_em->flush();
+    }
+
+    public function getUserInfo(int $userId, array $selectedFields): array
+    {
+        $qb = $this->createQueryBuilder('u');
+
+        $qb->select('u.id');
+
+        foreach ($selectedFields as $select) {
+            $qb->addSelect('u.' . $select);
+        }
+
+        $qb
+            ->andWhere('u.id = :userId')
+            ->setParameter('userId', $userId, PDO::PARAM_INT);
+
+        $result = $qb->getQuery()->getResult();
+
+        if ($result) {
+            return $result[0];
+        }
+
+        return [];
     }
 }

@@ -1,7 +1,8 @@
 overblog_graphql:
     definitions:
         schema:
-            query: Query
+            user_info:
+                query: UserInfo
         mappings:
             types:
                 -

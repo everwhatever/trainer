@@ -1,2 +1,7 @@
-overblog_graphql_endpoint:
-    resource: "@OverblogGraphQLBundle/Resources/config/routing/graphql.yml"
+#overblog_graphql_endpoint:
+#    resource: "@OverblogGraphQLBundle/Resources/config/routing/graphql.yml"
+user_basic_info_endpoint:
+    path: graphql/user/info/query
+    defaults:
+        _controller: App\User\UI\Controller\UserInfoController::queryAction
+        _format: "json"

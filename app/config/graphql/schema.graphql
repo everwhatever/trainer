@@ -1,0 +1,10 @@
+type User {
+    id: ID!
+    email: String!
+    firstName: String
+    lastName: String
+    address: String
+    phoneNumber: String
+    role: [String]
+    verified: Boolean
+}
