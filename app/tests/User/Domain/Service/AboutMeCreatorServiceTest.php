@@ -16,12 +16,12 @@ class AboutMeCreatorServiceTest extends KernelTestCase
     public function setUp(): void
     {
         self::bootKernel();
-        $this->container = static::getContainer();
         $this->truncateEntities();
     }
     
     public function testItSavesAboutMeWithProperValues()
     {
+        $container = static::getContainer();
         $aboutMe = new AboutMe();
         $aboutMe->setTitle('Test');
         $aboutMe->setDescription('Test_desc');
@@ -31,7 +31,7 @@ class AboutMeCreatorServiceTest extends KernelTestCase
         $photoFile->method('getClientOriginalName')->willReturn('zdj');
         $photoFile->method('guessExtension')->willReturn('jpeg');
 
-        $creator = $this->container->get(AboutMeCreatorService::class);
+        $creator = $container->get(AboutMeCreatorService::class);
         $creator->create($photoFile, $aboutMe);
 
         $em = $this->getEntityManager();
@@ -65,6 +65,8 @@ class AboutMeCreatorServiceTest extends KernelTestCase
 
     private function getEntityManager(): EntityManagerInterface
     {
-        return $this->container->get(EntityManagerInterface::class);
+        $container = static::getContainer();
+
+        return $container->get(EntityManagerInterface::class);
     }
 }
