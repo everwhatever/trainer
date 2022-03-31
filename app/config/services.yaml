@@ -8,6 +8,8 @@ services:
         bind:
             $photoDirectory: '%photo_directory%'
             $shortPhotoDir: 'uploads/photo/'
+            $localhostAddress: 'http://192.168.68.110:8080'
+            $graphqlUserInfoAddress: '/graphql/user/info/query'
 
     # User
     App\User\Application\:

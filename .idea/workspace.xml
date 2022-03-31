@@ -5,15 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/User/Application/Service/NameCasingTransformer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tests/User/Application/Service/NameCasingTransformerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Blog/Application/Service/UserInfoApiGetter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Application/Resolver/UserInfoResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Resolver/UserInfoResolver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Blog/Application/Message/Command/PostCreationMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Application/Message/Command/PostCreationMessage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Blog/Domain/Service/PostSaver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Domain/Service/PostSaver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/DisplayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/DisplayController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/blog/display_one_post.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/blog/display_one_post.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000006" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000006" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/doctrine_migration_versions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/doctrine_migration_versions.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/post.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/post.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/user.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +262,7 @@
       <workItem from="1646026258236" duration="24745000" />
       <workItem from="1646589031779" duration="7651000" />
       <workItem from="1647841153136" duration="8303000" />
-      <workItem from="1648013783848" duration="11707000" />
+      <workItem from="1648013783848" duration="17973000" />
     </task>
     <task id="LOCAL-00001" summary="git blog">
       <created>1647498722425</created>

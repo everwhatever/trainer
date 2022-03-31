@@ -16,11 +16,9 @@ class PostSaver
         $this->entityManager = $entityManager;
     }
 
-    public function savePost(Post $post, ?int $userId): void
+    public function savePost(Post $post, int $userId): void
     {
-        if (null != $userId) {
-            $post->setAuthorId($userId);
-        }
+        $post->setAuthorId($userId);
 
         $this->entityManager->persist($post);
         $this->entityManager->flush();
