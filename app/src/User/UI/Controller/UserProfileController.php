@@ -5,6 +5,7 @@ namespace App\User\UI\Controller;
 use App\User\Domain\Model\User;
 use App\User\Infrastructure\Form\EditUserProfileType;
 use Doctrine\ORM\EntityManagerInterface;
+use Exception;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -21,11 +22,16 @@ class UserProfileController extends AbstractController
 
     /**
      * @Route("/user/{id}/profile", name="user_profile")
+     * @throws Exception
      */
     public function displayUserProfileAction(int $id): Response
     {
         /** @var User $user */
         $user = $this->entityManager->getRepository(User::class)->findOneBy(['id' => $id]);
+
+        if ($this->getUser() !== $user && !in_array('ROLE_ADMIN', $this->getUser()->getRoles())) {
+            throw new Exception('No access!');
+        }
 
         return $this->render('user/profile/user_profile.html.twig', [
             'first_name' => $user->getFirstName(),
@@ -37,11 +43,34 @@ class UserProfileController extends AbstractController
     }
 
     /**
+     * @Route("/user/all", name="all_users_profiles")
+     * @throws Exception
+     */
+    public function displayAllUsersProfilesAction(): Response
+    {
+        $users = $this->entityManager->getRepository(User::class)->findAll();
+
+        if (!in_array('ROLE_ADMIN', $this->getUser()->getRoles())) {
+            throw new Exception('No access!');
+        }
+
+        return $this->render('user/profile/all_users_profiles.html.twig', [
+            'users' => $users
+        ]);
+    }
+
+    /**
      * @Route("/user/{id}/profile/edit", name="user_profile_edit")
+     * @throws Exception
      */
     public function editUserProfileAction(Request $request, int $id): Response
     {
         $user = $this->entityManager->getRepository(User::class)->findOneBy(['id' => $id]);
+
+        if ($this->getUser() !== $user && !in_array('ROLE_ADMIN', $this->getUser()->getRoles())) {
+            throw new Exception('No access!');
+        }
+
         $form = $this->createForm(EditUserProfileType::class, $user);
         $form->handleRequest($request);
 
@@ -61,10 +90,16 @@ class UserProfileController extends AbstractController
 
     /**
      * @Route("/user/{id}/profile/delete", name="user_profile_delete")
+     * @throws Exception
      */
     public function deleteUser(int $id): Response
     {
         $user = $this->entityManager->getRepository(User::class)->findOneBy(['id' => $id]);
+
+        if ($this->getUser() !== $user && !in_array('ROLE_ADMIN', $this->getUser()->getRoles())) {
+            throw new Exception('No access!');
+        }
+
         $this->entityManager->remove($user);
         $this->entityManager->flush();
 
