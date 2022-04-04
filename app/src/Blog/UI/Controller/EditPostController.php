@@ -33,6 +33,7 @@ class EditPostController extends AbstractController
      */
     public function editAction(Request $request, int $id): Response
     {
+        $userId = $this->getUser()->getId();
         $post = $this->entityManager->getRepository(Post::class)->findOneBy(['id' => $id]);
         $form = $this->createForm(CreatePostType::class, $post);
         $form->handleRequest($request);
@@ -40,7 +41,7 @@ class EditPostController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $post = $form->getData();
 
-            $this->command($post);
+            $this->command($post, $userId);
 
             return $this->redirectToRoute('blog_display_one_post', ['id' => $post->getId()]);
         }
@@ -51,9 +52,9 @@ class EditPostController extends AbstractController
         ]);
     }
 
-    private function command(Post $post): void
+    private function command(Post $post, int $userId): void
     {
-        $message = new PostCreationMessage($post);
+        $message = new PostCreationMessage($post, $userId);
         $this->commandBus->dispatch($message);
     }
 }

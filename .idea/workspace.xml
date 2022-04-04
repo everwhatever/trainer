@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/templates/user/profile/all_users_profiles.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/UserProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/UserProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000007" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000007" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibtmp1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Blog/Domain/Model/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Domain/Model/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Blog/Infrastructure/Repository/CommentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Infrastructure/Repository/CommentRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

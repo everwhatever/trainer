@@ -175,11 +175,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     public function getSalt()
     {
-        // TODO: Implement getSalt() method.
     }
 
     public function getUsername()
     {
-        // TODO: Implement getUsername() method.
     }
 }

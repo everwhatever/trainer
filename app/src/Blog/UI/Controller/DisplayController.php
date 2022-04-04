@@ -52,6 +52,8 @@ class DisplayController extends AbstractController
             'author_first_name' => $authorInfo['first_name'] ?? '',
             'author_email' => $authorInfo['email'] ?? '',
             'author_last_name' => $authorInfo['last_name'] ?? '',
+            'comments' => $post->getComments(),
+            'post_id' => $post->getId()
         ]);
     }
 }

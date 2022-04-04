@@ -19,6 +19,7 @@ class UserInfoApiGetter
     public function getUserInfoById(int $userId, string $requireFields): array
     {
         $endpoint = $this->localhostAddress . $this->graphqlUserInfoAddress;
+        $endpoint = 'http://192.168.68.110:8080/graphql/user/info/query';
         $options = $this->prepareQuery($userId, $requireFields);
 
         $context  = stream_context_create($options);

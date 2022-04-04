@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace App\Blog\Domain\Model;
 
 use App\Blog\Infrastructure\Repository\PostRepository;
+use App\Race\Domain\Model\Time;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -33,6 +35,11 @@ class Post
      * @ORM\Column(type="integer")
      */
     private int $authorId;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Comment::class, mappedBy="post")
+     */
+    private Collection $comments;
 
     public function getId(): ?int
     {
@@ -67,5 +74,20 @@ class Post
     public function setAuthorId(int $authorId): void
     {
         $this->authorId = $authorId;
+    }
+
+    public function getComments(): Collection
+    {
+        return $this->comments;
+    }
+
+    public function addComment(Comment $comment): self
+    {
+        if (!$this->comments->contains($comment)) {
+            $this->comments[] = $comment;
+            $comment->setPost($this);
+        }
+
+        return $this;
     }
 }

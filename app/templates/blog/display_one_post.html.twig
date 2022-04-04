@@ -5,4 +5,13 @@
     {{ author_first_name }}
     {{ author_last_name }}
     {{ author_email }}
+
+    <a href="{{ path('blog_comment_create',{'postId':post_id}) }}">DOdaj KOMENTARZ</a>
+    KOMENTARZE:
+    {% for comment in comments %}
+        <p>komentarz: {{ comment.content }}</p>
+
+        {# TODO: dodać autora komentarza #}
+
+    {% endfor %}
 {% endblock %}
