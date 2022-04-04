@@ -6,13 +6,12 @@ namespace App\User\UI\Controller;
 
 use App\Shared\UI\Controller\AbstractQueryController;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class UserInfoController extends AbstractQueryController
 {
-    public function queryAction(Request $request)
+    public function queryAction(Request $request): Response
     {
-        $response = $this->endpointAction($request, 'user_info');
-
-        return $response;
+        return $this->endpointAction($request, 'user_info');
     }
 }
