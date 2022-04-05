@@ -6,6 +6,7 @@ namespace App\Blog\Domain\Model;
 
 use App\Blog\Infrastructure\Repository\PostRepository;
 use App\Race\Domain\Model\Time;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -40,6 +41,11 @@ class Post
      * @ORM\OneToMany(targetEntity=Comment::class, mappedBy="post")
      */
     private Collection $comments;
+
+    public function __construct()
+    {
+        $this->comments = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
