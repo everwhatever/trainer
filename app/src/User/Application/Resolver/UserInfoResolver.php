@@ -22,12 +22,12 @@ class UserInfoResolver implements QueryInterface
 
     public function __invoke(array $arguments, ResolveInfo $info): array
     {
-        if (!isset($arguments[0]['userId'])) {
+        if (!isset($arguments[0]['userIds'])) {
             return [];
         }
-        $userId = $arguments[0]['userId'];
+        $userIds = $arguments[0]['userIds'];
         $selectedFields = $this->casingTransformer->transformToCamelCase(array_keys($info->getFieldSelection()));
 
-        return $this->casingTransformer->transformToSnakeCase($this->userRepository->getUserInfo($userId, $selectedFields));
+        return $this->casingTransformer->transformToSnakeCase($this->userRepository->getUserInfo($userIds, $selectedFields));
     }
 }

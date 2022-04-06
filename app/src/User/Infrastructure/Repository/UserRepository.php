@@ -37,7 +37,7 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         $this->_em->flush();
     }
 
-    public function getUserInfo(int $userId, array $selectedFields): array
+    public function getUserInfo(array $userIds, array $selectedFields): array
     {
         $qb = $this->createQueryBuilder('u');
 
@@ -48,8 +48,8 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         }
 
         $qb
-            ->andWhere('u.id = :userId')
-            ->setParameter('userId', $userId, PDO::PARAM_INT);
+            ->andWhere('u.id IN (:userIds)')
+            ->setParameter('userIds', $userIds, PDO::PARAM_INT);
 
         $result = $qb->getQuery()->getResult();
 

@@ -1,17 +1,20 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    {{ title }}
-    {{ content }}
-    {{ author_first_name }}
-    {{ author_last_name }}
-    {{ author_email }}
+    <div class="jumbotron">
+        <h1>{{ title }}</h1>
+        <p>{{ content }}</p>
+    </div>
+    <p>Autor: {{ author_first_name }} {{ author_last_name }} ({{ author_email }})</p>
 
-    <a href="{{ path('blog_comment_create',{'postId':post_id}) }}">DOdaj KOMENTARZ</a>
-    KOMENTARZE:
+    <a class="btn btn-primary" href="{{ path('blog_comment_create',{'postId':post_id}) }}">Skomentuj</a>
+    <h2>KOMENTARZE:</h2>
     {% for comment in comments %}
-        <p>komentarz: {{ comment.content }}</p>
-
-        {# TODO: dodać autora komentarza #}
-
+        <div class="jumbotron">
+            <p>{{ comment['content'] }}</p>
+            <small>Autor: {{ comment['author'] }}</small><br>
+            {% if is_granted('ROLE_ADMIN') or app.user.getEmail() == comment['author'] %}
+                <a class="btn btn-danger" href="{{ path('blog_comment_delete',{'id':comment['id']}) }}">Usuń</a>
+            {% endif %}
+        </div>
     {% endfor %}
 {% endblock %}

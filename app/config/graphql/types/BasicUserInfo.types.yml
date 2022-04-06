@@ -6,6 +6,6 @@ UserInfo:
       byId:
         type: "User"
         args:
-          userId:
-            type: Int!
+          userIds:
+            type: "[Int]"
         resolve: "@=query('user_info_resolver', [args], info)"
