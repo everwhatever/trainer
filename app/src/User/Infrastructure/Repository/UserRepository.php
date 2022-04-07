@@ -4,6 +4,7 @@ namespace App\User\Infrastructure\Repository;
 
 use App\User\Domain\Model\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\DBAL\Connection;
 use Doctrine\Persistence\ManagerRegistry;
 use PDO;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
@@ -49,7 +50,7 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
 
         $qb
             ->andWhere('u.id IN (:userIds)')
-            ->setParameter('userIds', $userIds, PDO::PARAM_INT);
+            ->setParameter('userIds', $userIds, Connection::PARAM_INT_ARRAY);
 
         $result = $qb->getQuery()->getResult();
 

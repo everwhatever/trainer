@@ -29,6 +29,6 @@ class DeletePostController extends AbstractController
         $this->entityManager->remove($post);
         $this->entityManager->flush();
 
-        return $this->redirectToRoute('blog_diplay_all_posts');
+        return $this->redirectToRoute('blog_display_all_posts');
     }
 }

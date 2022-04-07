@@ -30,7 +30,7 @@ class DisplayController extends AbstractController
     }
 
     /**
-     * @Route("/all", name="blog_diplay_all_posts")
+     * @Route("/all", name="blog_display_all_posts")
      */
     public function displayAllPostsAction(): Response
     {

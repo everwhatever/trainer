@@ -8,7 +8,6 @@ use App\Blog\Domain\Model\Comment;
 use Doctrine\ORM\EntityManagerInterface;
 use Exception;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -27,8 +26,6 @@ class DeleteCommentController extends AbstractController
      */
     public function deleteAction(int $id): Response
     {
-        //TODO: sprawdzić czemu są złe idki przy zapisaniu
-
         $comment = $this->entityManager->getRepository(Comment::class)->findOneBy(['id' => $id]);
 
         if ($this->getUser()->getId() !== $comment->getAuthorId() && !in_array('ROLE_ADMIN', $this->getUser()->getRoles())) {
@@ -38,6 +35,6 @@ class DeleteCommentController extends AbstractController
         $this->entityManager->remove($comment);
         $this->entityManager->flush();
 
-        return $this->redirectToRoute('app_homepage');
+        return $this->redirectToRoute('blog_display_all_posts');
     }
 }
