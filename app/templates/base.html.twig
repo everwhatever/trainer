@@ -24,7 +24,7 @@
         <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('user_profile',{'id':app.user.getId()}) }}">Mój profil</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('about_me_display_one') }}">O mnie</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('blog_display_all_posts') }}">Blog</a>
-{#        <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('league_display_all') }}">Ligi</a>#}
+        <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('app_contact') }}">Kontakt</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('app_logout') }}">Wyloguj się</a>
         {% if is_granted("ROLE_ADMIN") %}
             <div class="dropdown">
@@ -43,7 +43,7 @@
         <a class="flex-sm-fill text-sm-center nav-link active" href="{{ path('homepage') }}">Strona główna</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('about_me_display_one') }}">O mnie</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('blog_display_all_posts') }}">Blog</a>
-{#        <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('league_display_all') }}">Ligi</a>#}
+        <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('app_contact') }}">Kontakt</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('app_login') }}">Zaloguj się</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="{{ path('register') }}">Zarejestruj się</a>
     </nav>
