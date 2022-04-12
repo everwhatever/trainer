@@ -968,6 +968,7 @@ trainer\\_docker|schema||admin||UPDATE|G</Grants>
     </column>
     <foreign-key id="293" parent="278" name="FK_9474526C4B89032C">
       <ColNames>post_id</ColNames>
+      <OnDelete>cascade</OnDelete>
       <RefColNames>id</RefColNames>
       <RefTableName>post</RefTableName>
     </foreign-key>

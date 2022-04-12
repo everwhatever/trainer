@@ -6,7 +6,7 @@ RUN docker-php-ext-install pdo_mysql
 
 RUN pecl install apcu
 
-RUN apt-get update && \
+RUN apt-get --allow-releaseinfo-change update && \
 apt-get install -y \
 libzip-dev
 
@@ -19,4 +19,9 @@ WORKDIR /var/www/trainer
 
 RUN curl -sS https://get.symfony.com/cli/installer | bash
 RUN mv /root/.symfony/bin/symfony /usr/local/bin/symfony
+
+ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
+
+RUN chmod +x /usr/local/bin/install-php-extensions && sync && \
+    install-php-extensions amqp
 

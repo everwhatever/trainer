@@ -38,7 +38,7 @@ class CreatePostController extends AbstractController
 
             $this->command($post, $userId);
 
-            return $this->redirectToRoute('blog_display_one_post', ['id' => $post->getId()]);
+            return $this->redirectToRoute('blog_display_all_posts');
         }
 
         return $this->render('blog/create_post.html.twig', [
