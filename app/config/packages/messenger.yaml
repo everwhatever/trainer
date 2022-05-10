@@ -9,10 +9,30 @@ framework:
 
         transports:
             # https://symfony.com/doc/current/messenger.html#transport-configuration
-             async: '%env(MESSENGER_TRANSPORT_DSN)%'
+             post_creation:
+               dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+               options:
+                 exchange:
+                   name: messages
+                   type: direct
+                   default_publish_routing_key: post
+                 queues:
+                   post_creation:
+                     binding_keys: [post]
+             comment_creation:
+              dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+              options:
+                exchange:
+                  name: messages
+                  type: direct
+                  default_publish_routing_key: comment
+                queues:
+                  comment_creation:
+                    binding_keys: [comment]
             # failed: 'doctrine://default?queue_name=failed'
             # sync: 'sync://'
 
         routing:
             # Route your messages to the transports
-             'App\Blog\Application\Message\Command\PostCreationMessage': async
+             'App\Blog\Application\Message\Command\PostCreationMessage': post_creation
+             'App\Blog\Application\Message\Command\CommentCreationMessage': comment_creation

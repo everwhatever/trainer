@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="trainer_docker@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.32">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.38">
     <root id="1">
       <DefaultCasing>exact</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -915,10 +915,10 @@ trainer\\_docker|schema||admin||UPDATE|G</Grants>
       <CollationName>utf8mb4_unicode_ci</CollationName>
     </table>
     <column id="283" parent="277" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="284" parent="277" name="photo_filename">
       <DataType>varchar(255)|0s</DataType>
@@ -947,10 +947,10 @@ trainer\\_docker|schema||admin||UPDATE|G</Grants>
       <Primary>1</Primary>
     </key>
     <column id="289" parent="278" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="290" parent="278" name="post_id">
       <DataType>int|0s</DataType>
@@ -1000,10 +1000,10 @@ trainer\\_docker|schema||admin||UPDATE|G</Grants>
       <Primary>1</Primary>
     </key>
     <column id="300" parent="280" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="301" parent="280" name="title">
       <DataType>varchar(255)|0s</DataType>
@@ -1026,10 +1026,10 @@ trainer\\_docker|schema||admin||UPDATE|G</Grants>
       <Primary>1</Primary>
     </key>
     <column id="305" parent="281" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="306" parent="281" name="user_id">
       <DataType>int|0s</DataType>
@@ -1073,10 +1073,10 @@ trainer\\_docker|schema||admin||UPDATE|G</Grants>
       <Primary>1</Primary>
     </key>
     <column id="314" parent="282" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>null</SequenceIdentity>
     </column>
     <column id="315" parent="282" name="email">
       <DataType>varchar(180)|0s</DataType>
