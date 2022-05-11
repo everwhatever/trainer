@@ -5,34 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Product/Infrastructure/Form/CreateOfferType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/CreateOfferController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/product/offer/create_offer.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/13e0c8eb-7b03-4ce0-a3f1-6d9e089a1b81.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13e0c8eb-7b03-4ce0-a3f1-6d9e089a1b81.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a9dccb4-c693-4501-83be-5eadd7999f01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a9dccb4-c693-4501-83be-5eadd7999f01.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/packages/messenger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/messenger.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000003" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000004" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000005" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000006" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000007" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000010" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000010" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibtmp1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Shared/UI/Controller/HomepageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/user/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/shared/homepage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000011" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000011" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/comment.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/comment.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/doctrine_migration_versions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/doctrine_migration_versions.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +63,7 @@
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Application/Message/Command/PostCreationMessage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Domain/Model/Comment.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Domain/Model/Post.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Shared/UI/Controller/HomepageController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/Application/Event/VerifyEmailEvent.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/Application/Handler/Command/UserCreationHandler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/Application/Message/Command/AboutMeCreationMessage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -97,8 +83,8 @@
     <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/EditController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/Security/RegistrationController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/UserProfileController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/templates/shared/homepage.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/templates/user/about_me/about_me_display_one.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/templates/user/homepage.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/tests/User/Application/Service/NameCasingTransformerTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/tests/User/Application/Service/PhotoFilenameServiceTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/tests/User/Domain/Service/AboutMeCreatorServiceTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -244,21 +230,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/Blog/Application/Message" />
       <recent name="$PROJECT_DIR$/app/templates/training_plan/about_me" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/templates/shared" />
       <recent name="$PROJECT_DIR$/app/config/graphql" />
       <recent name="$PROJECT_DIR$/app/templates/training_plan/security" />
     </key>
@@ -279,6 +266,7 @@
       <workItem from="1649651500195" duration="8215000" />
       <workItem from="1650893443646" duration="602000" />
       <workItem from="1652157051863" duration="3130000" />
+      <workItem from="1652246021337" duration="1274000" />
     </task>
     <task id="LOCAL-00001" summary="git blog">
       <created>1647498722425</created>

@@ -89,3 +89,31 @@ services:
             - '@Overblog\GraphQLBundle\Request\Parser'
             - "%overblog_graphql.handle_cors%"
             - "%overblog_graphql.batching_method%"
+
+    #Product
+    App\Product\Application\:
+        resource: '../src/Product/Application'
+
+    App\Product\Domain\:
+        resource: '../src/Product/Domain'
+
+    App\Product\Infrastructure\:
+        resource: '../src/Product/Infrastructure'
+
+    App\Product\UI\:
+        resource: '../src/Product/UI'
+
+    App\Product\UI\Controller\:
+        resource: '../src/Product/UI/Controller'
+        tags: [ 'controller.service_arguments' ]
+
+    App\Product\Application\Handler\Command\:
+        resource: '../src/Product/Application/Handler/Command/'
+        autoconfigure: false
+        tags: [ { name: messenger.message_handler, bus: command.bus } ]
+
+    App\Product\Application\Handler\Query\:
+        resource: '../src/Product/Application/Handler/Query/'
+        autoconfigure: false
+        tags: [ { name: messenger.message_handler, bus: query.bus } ]
+

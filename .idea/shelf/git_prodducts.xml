@@ -1,0 +1,9 @@
+<changelist name="git_prodducts" date="1652247392488" recycled="false">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/git_prodducts/shelved.patch" />
+  <option name="DESCRIPTION" value="git prodducts" />
+  <binary>
+    <option name="BEFORE_PATH" value="mysql/binlog.000011" />
+    <option name="AFTER_PATH" value="mysql/binlog.000011" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/git_prodducts/binlog.000011" />
+  </binary>
+</changelist>
