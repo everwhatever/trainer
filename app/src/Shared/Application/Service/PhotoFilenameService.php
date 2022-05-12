@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\User\Application\Service;
+namespace App\Shared\Application\Service;
 
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\File\File;

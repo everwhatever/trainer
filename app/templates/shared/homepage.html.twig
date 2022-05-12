@@ -1,4 +1,22 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-HOMEPAGE
+    <div class="jumbotron">
+        <h1>Strona Główna</h1>
+    </div>
+
+    <div class="jumbotron">
+        <h3>Oferty</h3>
+    {% for offer in offers %}
+        {% set photo = photo_dir ~ offer.getPhotoFilename %}
+        <div class="card" style="width: 28%; float: left; margin: 2%; text-align: center">
+            <img style="width: 100%; height: 250px;" class="card-img-top" src="{{ asset(photo) }}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ offer.getName }}</h5>
+                <p class="card-text">{{ offer.getDescription }}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    {% endfor %}
+        <div style="clear: left"></div>
+    </div>
 {% endblock %}

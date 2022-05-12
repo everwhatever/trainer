@@ -9,6 +9,7 @@ use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 use Symfony\Component\Mime\Email;
+use const PHP_EOL;
 
 class ContactHandler implements MessageHandlerInterface
 {
@@ -29,7 +30,7 @@ class ContactHandler implements MessageHandlerInterface
             ->from($data['email'])
             ->to('koszykarz.kuba@gmail.com')
             ->subject($data['subject'])
-            ->text('Od : (' . $data['email'] . ') ' . $data['name'] . \PHP_EOL .
+            ->text('Od : (' . $data['email'] . ') ' . $data['name'] . PHP_EOL .
                 $data['content'],
                 'text/plain');
         $this->mailer->send($message);

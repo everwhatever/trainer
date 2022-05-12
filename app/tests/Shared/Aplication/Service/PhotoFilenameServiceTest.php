@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\User\Application\Service;
+namespace  App\Shared\Application\Service;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\File\UploadedFile;

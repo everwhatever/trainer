@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace App\User\Domain\Service;
+namespace App\Product\Application\Handler\Command;
 
+use App\Product\Application\Message\Command\CreateOfferMessage;
 use App\Shared\Application\Service\PhotoFilenameService;
-use App\User\Domain\Model\AboutMe;
 use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Component\HttpFoundation\File\File;
+use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
-class AboutMeCreatorService
+class CreateOfferHandler implements MessageHandlerInterface
 {
     private EntityManagerInterface $entityManager;
 
@@ -21,13 +21,16 @@ class AboutMeCreatorService
         $this->filenameService = $filenameService;
     }
 
-    public function create(File $photo, AboutMe $aboutMe): void
+    public function __invoke(CreateOfferMessage $message): void
     {
+        $photo = $message->getPhoto();
+        $offer = $message->getOffer();
+
         $newFilename = $this->filenameService->preparePhotoFilename($photo);
 
-        $aboutMe->setPhotoFilename($newFilename);
+        $offer->setPhotoFilename($newFilename);
 
-        $this->entityManager->persist($aboutMe);
+        $this->entityManager->persist($offer);
         $this->entityManager->flush();
     }
 }
