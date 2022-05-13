@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Oferta{% endblock %}
+
+{% block body %}
+    Edycja
+    {{ form_start(form) }}
+
+    {{ form_end(form) }}
+
+    <a href="{{ path('offer_delete',{'id': offer_id}) }}" onclick="return confirm('Na pewno chcesz usunąć ofertę?')" class="btn btn-danger">Usuń ofertę</a>
+{% endblock %}

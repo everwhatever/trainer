@@ -10,7 +10,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class DisplayOneController extends AbstractController
+class DisplayAllController extends AbstractController
 {
     private EntityManagerInterface $entityManager;
 
@@ -23,19 +23,15 @@ class DisplayOneController extends AbstractController
     }
 
     /**
-     * @Route("/offer/display/{id}", name="display_one_offer")
+     * @Route("/offer/display", name="offer_display_all")
      */
-    public function displayAction(int $id): Response
+    public function displayAction(): Response
     {
-        /** @var Offer $offer */
-        $offer = $this->entityManager->getRepository(Offer::class)->findOneBy(['id' => $id]);
+        $offers = $this->entityManager->getRepository(Offer::class)->findAll();
 
-        return $this->render('product/offer/display_one.html.twig', [
-            'name' => $offer->getName(),
-            'description' => $offer->getDescription(),
-            'duration' => $offer->getDuration(),
-            'price' => $offer->getPrice(),
-            'photo_dir' => $this->shortPhotoDir . $offer->getPhotoFilename()
+        return $this->render('product/offer/display_all.html.twig', [
+            'offers' => $offers,
+            'photo_dir' => $this->shortPhotoDir
         ]);
     }
 }

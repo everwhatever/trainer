@@ -13,7 +13,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ offer.getName }}</h5>
                 <p class="card-text">{{ offer.getDescription }}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="{{ path('display_one_offer',{'id':offer.getId()}) }}" class="btn btn-primary">Zobacz</a>
             </div>
         </div>
     {% endfor %}

@@ -5,36 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Product/Application/Handler/Command/CreateOfferHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Product/Application/Message/Command/CreateOfferMessage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayOneController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DeleteController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayAllController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/EditController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/product/offer/display_all.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/product/offer/display_one.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/product/offer/edit_offer.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/migrations/Version20220412050630.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20220412050630.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/migrations/Version20220511052009.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20220511052009.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/migrations/Version20220511052748.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20220511052748.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/migrations/Version20220511053052.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/migrations/Version20220511053052.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/Application/DTO/PostDTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Application/DTO/PostDTO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/Application/Handler/Query/DisplayOnePostHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Application/Handler/Query/DisplayOnePostHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/Application/Message/Query/DisplayOnePostQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Application/Message/Query/DisplayOnePostQuery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/Application/Service/DisplayPostInfoFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Application/Service/DisplayPostInfoFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/Comment/DeleteCommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/Comment/DeleteCommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/Domain/Model/Offer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/Domain/Model/Offer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/Infrastructure/Form/CreateOfferType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/Infrastructure/Form/CreateOfferType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/Infrastructure/Repository/OfferRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/Infrastructure/Repository/OfferRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/CreateOfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/CreateOfferController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Shared/UI/Controller/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Shared/UI/Controller/HomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Application/Handler/Command/ContactHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Handler/Command/ContactHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Application/Message/Command/ContactMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Message/Command/ContactMessage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Application/Service/PhotoFilenameService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Shared/Application/Service/PhotoFilenameService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Domain/Service/AboutMeCreatorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Domain/Service/AboutMeCreatorService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Infrastructure/Form/Contact/ContactType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Infrastructure/Form/Contact/ContactType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/Contact/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/Contact/ContactController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayOneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayOneController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/product/offer/create_offer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/product/offer/create_offer.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/shared/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/shared/homepage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/user/contact/contact.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user/contact/contact.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests/User/Application/Service/PhotoFilenameServiceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/tests/Shared/Aplication/Service/PhotoFilenameServiceTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

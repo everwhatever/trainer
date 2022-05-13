@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="jumbotron">
+        <h1>Oferty</h1>
+    </div>
+
+    <div class="jumbotron">
+        <h3>Oferty</h3>
+        {% for offer in offers %}
+            {% set photo = photo_dir ~ offer.getPhotoFilename %}
+            <div class="card" style="width: 28%; float: left; margin: 2%; text-align: center">
+                <img style="width: 100%; height: 250px;" class="card-img-top" src="{{ asset(photo) }}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{ offer.getName }}</h5>
+                    <p class="card-text">{{ offer.getDescription }}</p>
+                    <a href="{{ path('display_one_offer',{'id':offer.getId()}) }}" class="btn btn-primary">Zobacz</a>
+                    {% if is_granted("ROLE_ADMIN") %}
+                        <a class="btn btn-info" href="{{ path('offer_edit',{'id':offer.getId()}) }}">Edytuj</a>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+        <div style="clear: left"></div>
+    </div>
+{% endblock %}

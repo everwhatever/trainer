@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="jumbotron">
+        <div class="card" style="width: 70%; margin: auto; text-align: center">
+            <img style="width: 100%; height: 700px;" class="card-img-top" src="{{ asset(photo_dir) }}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ name }}</h5>
+                <p class="card-text">{{ description }}</p>
+                <p class="card-text">czas trwania: {{ duration }}, cena: {{ price }}</p>
+                <a href="#" class="btn btn-primary">Kup</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
