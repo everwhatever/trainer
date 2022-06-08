@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="trainer_docker@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.38">
-    <root id="1"/>
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.39">
+    <root id="1">
+      <DefaultCasing>exact</DefaultCasing>
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
+      <Grants>trainer\\_docker|schema||admin||ALTER|G
+trainer\\_docker|schema||admin||ALTER ROUTINE|G
+trainer\\_docker|schema||admin||CREATE|G
+trainer\\_docker|schema||admin||CREATE ROUTINE|G
+trainer\\_docker|schema||admin||CREATE TEMPORARY TABLES|G
+trainer\\_docker|schema||admin||CREATE VIEW|G
+trainer\\_docker|schema||admin||DELETE|G
+trainer\\_docker|schema||admin||DROP|G
+trainer\\_docker|schema||admin||EVENT|G
+trainer\\_docker|schema||admin||EXECUTE|G
+trainer\\_docker|schema||admin||INDEX|G
+trainer\\_docker|schema||admin||INSERT|G
+trainer\\_docker|schema||admin||LOCK TABLES|G
+trainer\\_docker|schema||admin||REFERENCES|G
+trainer\\_docker|schema||admin||SELECT|G
+trainer\\_docker|schema||admin||SHOW VIEW|G
+trainer\\_docker|schema||admin||TRIGGER|G
+trainer\\_docker|schema||admin||UPDATE|G</Grants>
+      <ServerVersion>8.0.28</ServerVersion>
+    </root>
     <collation id="2" parent="1" name="armscii8_bin">
       <Charset>armscii8</Charset>
     </collation>
@@ -896,7 +919,7 @@
       <CollationName>utf8mb4_unicode_ci</CollationName>
     </table>
     <column id="284" parent="277" name="id">
-      <AutoIncrement>2</AutoIncrement>
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -928,7 +951,7 @@
       <Primary>1</Primary>
     </key>
     <column id="290" parent="278" name="id">
-      <AutoIncrement>3</AutoIncrement>
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1014,7 +1037,7 @@
       <Primary>1</Primary>
     </key>
     <column id="308" parent="281" name="id">
-      <AutoIncrement>7</AutoIncrement>
+      <AutoIncrement>6</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1087,7 +1110,7 @@
       <Primary>1</Primary>
     </key>
     <column id="322" parent="283" name="id">
-      <AutoIncrement>3</AutoIncrement>
+      <AutoIncrement>2</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>

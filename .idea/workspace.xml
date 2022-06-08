@@ -5,16 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DeleteController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayAllController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/EditController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/product/offer/display_all.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/product/offer/display_one.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/product/offer/edit_offer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/13e0c8eb-7b03-4ce0-a3f1-6d9e089a1b81.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/13e0c8eb-7b03-4ce0-a3f1-6d9e089a1b81.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9a9dccb4-c693-4501-83be-5eadd7999f01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9a9dccb4-c693-4501-83be-5eadd7999f01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/uploads/photo/274258482-258942172953511-2143472130950508255-n-627c97e46c58d.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/uploads/photo/274258482-258942172953511-2143472130950508255-n-627c97e46c58d.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/uploads/photo/photo5981068656823613330-627deb44c152c.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/uploads/photo/photo5981068656823613330-627deb44c152c.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/uploads/photo/photo5996972285065541285-627debc305069.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/uploads/photo/photo5996972285065541285-627debc305069.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/uploads/photo/photo5996972285065541291-627c9ceb66559.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/uploads/photo/photo5996972285065541291-627c9ceb66559.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/uploads/photo/photo6035350519389731855-627c9872abeae.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/uploads/photo/photo6035350519389731855-627c9872abeae.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DeleteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DeleteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayAllController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayAllController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayOneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayOneController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/shared/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/shared/homepage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/EditController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/EditController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/product/offer/display_all.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/product/offer/display_all.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/product/offer/display_one.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/product/offer/display_one.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/product/offer/edit_offer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/product/offer/edit_offer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_1.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_1.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/auto.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000008" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000008" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000009" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000009" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000010" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000010" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000011" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000011" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/comment.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/doctrine_migration_versions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/doctrine_migration_versions.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/offer.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,14 +92,23 @@
     <setting file="file://$PROJECT_DIR$/app/config/services.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/migrations/Version20220224055152.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/migrations/Version20220304064837.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20220412050630.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20220511052009.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/migrations/Version20220511052748.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Blog/Application/Handler/Command/PostCreationHandler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Application/Message/Command/PostCreationMessage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Domain/Model/Comment.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Domain/Model/Post.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Blog/Domain/Service/PostSaver.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Blog/UI/Controller/CreatePostController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Product/Application/Handler/Command/CreateOfferHandler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Product/Application/Message/Command/CreateOfferMessage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Product/Domain/Model/Offer.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Product/Infrastructure/Form/CreateOfferType.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/CreateOfferController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DeleteController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayAllController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/EditController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Shared/Application/Service/PhotoFilenameService.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Shared/UI/Controller/HomepageController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/Application/Event/VerifyEmailEvent.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -79,6 +123,7 @@
     <setting file="file://$PROJECT_DIR$/app/src/User/Domain/Service/AboutMeCreatorService.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/Domain/Service/UserCreatorService.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/Infrastructure/EventSubscriber/VerifyEmailSubscriber.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/User/Infrastructure/Form/AboutMeType.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/Infrastructure/Form/Security/RegisterType.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/Infrastructure/Repository/Security/ResetPasswordRequestRepository.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/CreateController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -86,7 +131,11 @@
     <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/EditController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/Security/RegistrationController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/UserProfileController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/templates/blog/create_post.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/templates/blog/edit_post.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/templates/product/offer/edit_offer.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/templates/shared/homepage.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/templates/user/about_me/about_me_display_all.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/templates/user/about_me/about_me_display_one.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/tests/Shared/Aplication/Service/PhotoFilenameServiceTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/tests/User/Application/Service/NameCasingTransformerTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -238,20 +287,26 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jakub/Pulpit/trainer/mysql/trainer_docker&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/snap/phpstorm/267/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mysql/trainer_docker" />
+      <recent name="$PROJECT_DIR$/mysql" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/src/Blog/Application/Message" />
       <recent name="$PROJECT_DIR$/app/templates/training_plan/about_me" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mysql/trainer_docker" />
+      <recent name="$PROJECT_DIR$/con" />
       <recent name="$PROJECT_DIR$/app/tests/Shared/Aplication/Service" />
       <recent name="$PROJECT_DIR$/app/templates/shared" />
       <recent name="$PROJECT_DIR$/app/config/graphql" />
-      <recent name="$PROJECT_DIR$/app/templates/training_plan/security" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -271,6 +326,8 @@
       <workItem from="1650893443646" duration="602000" />
       <workItem from="1652157051863" duration="3130000" />
       <workItem from="1652246021337" duration="1274000" />
+      <workItem from="1653887188566" duration="4533000" />
+      <workItem from="1654576137202" duration="1968000" />
     </task>
     <task id="LOCAL-00001" summary="git blog">
       <created>1647498722425</created>
