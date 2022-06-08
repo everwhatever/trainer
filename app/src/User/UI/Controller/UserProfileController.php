@@ -24,18 +24,19 @@ class UserProfileController extends AbstractController
      * @throws Exception
      */
     #[Route(path: '/user/{id}/profile', name: 'user_profile')]
-    public function displayUserProfileAction(int $id) : Response
+    public function displayUserProfileAction(int $id): Response
     {
         $user = $this->entityManager->getRepository(User::class)->findOneBy(['id' => $id]);
         if ($this->getUser() !== $user && !in_array('ROLE_ADMIN', $this->getUser()->getRoles())) {
             throw new Exception('No access!');
         }
+
         return $this->render('user/profile/user_profile.html.twig', [
             'first_name' => $user->getFirstName(),
             'last_name' => $user->getLastName(),
             'email' => $user->getEmail(),
             'address' => $user->getAddress(),
-            'phone_number' => $user->getPhoneNumber()
+            'phone_number' => $user->getPhoneNumber(),
         ]);
     }
 
@@ -43,14 +44,15 @@ class UserProfileController extends AbstractController
      * @throws Exception
      */
     #[Route(path: '/user/all', name: 'all_users_profiles')]
-    public function displayAllUsersProfilesAction() : Response
+    public function displayAllUsersProfilesAction(): Response
     {
         $users = $this->entityManager->getRepository(User::class)->findAll();
         if (!in_array('ROLE_ADMIN', $this->getUser()->getRoles())) {
             throw new Exception('No access!');
         }
+
         return $this->render('user/profile/all_users_profiles.html.twig', [
-            'users' => $users
+            'users' => $users,
         ]);
     }
 
@@ -58,7 +60,7 @@ class UserProfileController extends AbstractController
      * @throws Exception
      */
     #[Route(path: '/user/{id}/profile/edit', name: 'user_profile_edit')]
-    public function editUserProfileAction(Request $request, int $id) : Response
+    public function editUserProfileAction(Request $request, int $id): Response
     {
         $user = $this->entityManager->getRepository(User::class)->findOneBy(['id' => $id]);
         if ($this->getUser() !== $user && !in_array('ROLE_ADMIN', $this->getUser()->getRoles())) {
@@ -74,8 +76,9 @@ class UserProfileController extends AbstractController
 
             return $this->redirectToRoute('user_profile', ['id' => $user->getId()]);
         }
+
         return $this->render('user/profile/user_profile_edit.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
 
@@ -83,7 +86,7 @@ class UserProfileController extends AbstractController
      * @throws Exception
      */
     #[Route(path: '/user/{id}/profile/delete', name: 'user_profile_delete')]
-    public function deleteUser(int $id) : Response
+    public function deleteUser(int $id): Response
     {
         $user = $this->entityManager->getRepository(User::class)->findOneBy(['id' => $id]);
         if ($this->getUser() !== $user && !in_array('ROLE_ADMIN', $this->getUser()->getRoles())) {
@@ -91,7 +94,7 @@ class UserProfileController extends AbstractController
         }
         $this->entityManager->remove($user);
         $this->entityManager->flush();
+
         return $this->redirectToRoute('homepage');
     }
-
 }

@@ -24,12 +24,11 @@ class CreateController extends AbstractController
         $this->commandBus = $commandBus;
     }
 
-
     /**
      * @IsGranted("ROLE_ADMIN")
      */
     #[Route(path: '/about-me/create', name: 'aboute_me_create')]
-    public function createAction(Request $request) : Response
+    public function createAction(Request $request): Response
     {
         $form = $this->createForm(AboutMeType::class);
         $form->handleRequest($request);
@@ -39,8 +38,9 @@ class CreateController extends AbstractController
 
             return $this->redirectToRoute('about_me_display_one');
         }
+
         return $this->render('user/about_me/about_me_edit.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
 

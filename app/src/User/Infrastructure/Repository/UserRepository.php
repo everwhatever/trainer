@@ -6,7 +6,6 @@ use App\User\Domain\Model\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\DBAL\Connection;
 use Doctrine\Persistence\ManagerRegistry;
-use PDO;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\PasswordUpgraderInterface;
@@ -45,7 +44,7 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         $qb->select('u.id');
 
         foreach ($selectedFields as $select) {
-            $qb->addSelect('u.' . $select);
+            $qb->addSelect('u.'.$select);
         }
 
         $qb

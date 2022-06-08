@@ -27,11 +27,11 @@ class AboutMeType extends AbstractType
                 new File([
                     'maxSize' => '2200k',
                     'mimeTypes' => [
-                        'image/jpeg'
+                        'image/jpeg',
                     ],
-                    'mimeTypesMessage' => 'Dodaj plik JPEG'
-                ])
-            ]
+                    'mimeTypesMessage' => 'Dodaj plik JPEG',
+                ]),
+            ],
         ])
             ->add('title', TextType::class, [
                 'label' => 'Tytuł',
@@ -40,10 +40,10 @@ class AboutMeType extends AbstractType
                 'label' => 'Opis',
             ])
             ->add('isActive', CheckboxType::class, [
-                'label' => 'Ustaw jak aktywny'
+                'label' => 'Ustaw jak aktywny',
             ])
             ->add('submit', SubmitType::class, [
-                'label' => 'Zapisz'
+                'label' => 'Zapisz',
             ]);
     }
 

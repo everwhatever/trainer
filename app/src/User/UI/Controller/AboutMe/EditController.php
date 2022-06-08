@@ -32,7 +32,7 @@ class EditController extends AbstractController
      * @IsGranted("ROLE_ADMIN")
      */
     #[Route(path: '/about-me/edit/{id}', name: 'aboute_me_edit')]
-    public function editAction(Request $request, int $id) : Response
+    public function editAction(Request $request, int $id): Response
     {
         $aboutMe = $this->entityManager->getRepository(AboutMe::class)->findOneBy(['id' => $id]);
         $form = $this->createForm(AboutMeType::class, $aboutMe);
@@ -43,8 +43,9 @@ class EditController extends AbstractController
 
             return $this->redirectToRoute('about_me_display_one');
         }
+
         return $this->render('user/about_me/about_me_edit.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
 

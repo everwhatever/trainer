@@ -23,16 +23,17 @@ class DisplayOneController extends AbstractController
     }
 
     #[Route(path: '/offer/display/{id}', name: 'display_one_offer')]
-    public function displayAction(int $id) : Response
+    public function displayAction(int $id): Response
     {
         /** @var Offer $offer */
         $offer = $this->entityManager->getRepository(Offer::class)->findOneBy(['id' => $id]);
+
         return $this->render('product/offer/display_one.html.twig', [
             'name' => $offer->getName(),
             'description' => $offer->getDescription(),
             'duration' => $offer->getDuration(),
             'price' => $offer->getPrice(),
-            'photo_dir' => $this->shortPhotoDir . $offer->getPhotoFilename()
+            'photo_dir' => $this->shortPhotoDir.$offer->getPhotoFilename(),
         ]);
     }
 }

@@ -5,9 +5,7 @@ declare(strict_types=1);
 namespace App\Product\Infrastructure\Form;
 
 use App\Product\Domain\Model\Offer;
-use App\User\Domain\Model\AboutMe;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -29,11 +27,11 @@ class CreateOfferType extends AbstractType
                 new File([
                     'maxSize' => '2200k',
                     'mimeTypes' => [
-                        'image/jpeg'
+                        'image/jpeg',
                     ],
-                    'mimeTypesMessage' => 'Dodaj plik JPEG'
-                ])
-            ]
+                    'mimeTypesMessage' => 'Dodaj plik JPEG',
+                ]),
+            ],
         ])
             ->add('name', TextType::class, [
                 'label' => 'Nazwa',
@@ -42,13 +40,13 @@ class CreateOfferType extends AbstractType
                 'label' => 'Opis',
             ])
             ->add('price', IntegerType::class, [
-                'label' => 'Cena'
+                'label' => 'Cena',
             ])
             ->add('duration', TextType::class, [
-                'label' => 'Czas trwania'
+                'label' => 'Czas trwania',
             ])
             ->add('submit', SubmitType::class, [
-                'label' => 'Zapisz'
+                'label' => 'Zapisz',
             ]);
     }
 

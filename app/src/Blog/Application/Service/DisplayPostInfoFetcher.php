@@ -33,7 +33,7 @@ class DisplayPostInfoFetcher
             $comments[] = ['id' => $comment->getId(), 'content' => $comment->getContent(), 'author' => $this->apiGetter->getUserInfoById([$comment->getAuthorId()], 'email')['email']];
         }
 
-        //TODO: n+1 problem here with comments
+        // TODO: n+1 problem here with comments
 
         return PostDTO::create($post, $comments, $authorInfo);
     }

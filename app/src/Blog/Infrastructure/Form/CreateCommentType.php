@@ -16,17 +16,17 @@ class CreateCommentType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('content', TextareaType::class, [
-            'label' => 'komentarz'
+            'label' => 'komentarz',
         ])
             ->add('submit', SubmitType::class, [
-                'label' => 'Zapisz'
+                'label' => 'Zapisz',
             ]);
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Comment::class
+            'data_class' => Comment::class,
         ]);
     }
 }

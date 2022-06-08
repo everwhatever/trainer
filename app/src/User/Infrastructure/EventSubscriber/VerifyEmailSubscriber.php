@@ -19,7 +19,7 @@ class VerifyEmailSubscriber implements EventSubscriberInterface
     private MailerInterface $mailer;
 
     public function __construct(VerifyEmailHelperInterface $verifyEmailHelper,
-                                MailerInterface            $mailer)
+                                MailerInterface $mailer)
     {
         $this->verifyEmailHelper = $verifyEmailHelper;
         $this->mailer = $mailer;
@@ -47,7 +47,7 @@ class VerifyEmailSubscriber implements EventSubscriberInterface
     public static function getSubscribedEvents(): array
     {
         return [
-            VerifyEmailEvent::NAME => 'verifyEmail'
+            VerifyEmailEvent::NAME => 'verifyEmail',
         ];
     }
 
@@ -56,7 +56,7 @@ class VerifyEmailSubscriber implements EventSubscriberInterface
         $email = new TemplatedEmail();
         $email->from('11jakub.jackob12@gmail.com');
         $email->to($userEmail);
-        $email->subject("Weryfikacja email-a");
+        $email->subject('Weryfikacja email-a');
         $email->htmlTemplate('user/security/confirmation_email.html.twig');
         $email->context(['signedUrl' => $signatureComponents->getSignedUrl()]);
 

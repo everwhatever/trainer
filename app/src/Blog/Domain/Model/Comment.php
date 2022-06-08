@@ -3,7 +3,6 @@
 namespace App\Blog\Domain\Model;
 
 use App\Blog\Infrastructure\Repository\CommentRepository;
-use App\Race\Domain\Model\Race;
 use Doctrine\ORM\Mapping as ORM;
 
 /**

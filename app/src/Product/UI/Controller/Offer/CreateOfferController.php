@@ -28,7 +28,7 @@ class CreateOfferController extends AbstractController
     }
 
     #[Route(path: '/offer/create', name: 'offer_create')]
-    public function createAction(Request $request) : Response
+    public function createAction(Request $request): Response
     {
         $form = $this->createForm(CreateOfferType::class);
         $form->handleRequest($request);
@@ -37,8 +37,9 @@ class CreateOfferController extends AbstractController
 
             return $this->redirectToRoute('homepage');
         }
+
         return $this->render('product/offer/create_offer.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
 

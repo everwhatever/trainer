@@ -17,32 +17,32 @@ class EditUserProfileType extends AbstractType
     {
         $builder->add('firstName', TextType::class, [
             'label' => 'Imię',
-            'required' => false
+            'required' => false,
         ])
             ->add('lastName', TextType::class, [
                 'label' => 'Nazwisko',
-                'required' => false
+                'required' => false,
             ])
             ->add('address', TextType::class, [
                 'label' => 'Adres',
-                'required' => false
+                'required' => false,
             ])
             ->add('email', EmailType::class, [
                 'disabled' => true,
             ])
             ->add('phoneNumber', IntegerType::class, [
                 'label' => 'Numer telefonu',
-                'required' => false
+                'required' => false,
             ])
             ->add('submit', SubmitType::class, [
-                'label' => 'Zapisz'
+                'label' => 'Zapisz',
             ]);
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => User::class
+            'data_class' => User::class,
         ]);
     }
 }

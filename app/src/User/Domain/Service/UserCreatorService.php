@@ -18,9 +18,9 @@ class UserCreatorService
 
     private EventDispatcherInterface $eventDispatcher;
 
-    public function __construct(EntityManagerInterface      $entityManager,
+    public function __construct(EntityManagerInterface $entityManager,
                                 UserPasswordHasherInterface $passwordHasher,
-                                EventDispatcherInterface    $eventDispatcher)
+                                EventDispatcherInterface $eventDispatcher)
     {
         $this->entityManager = $entityManager;
         $this->passwordHasher = $passwordHasher;

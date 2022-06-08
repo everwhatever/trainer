@@ -16,19 +16,20 @@ class EmailVerificationController extends AbstractController
 {
     private MessageBusInterface $commandBus;
 
-    public function __construct(MessageBusInterface $commandBus,)
+    public function __construct(MessageBusInterface $commandBus)
     {
         $this->commandBus = $commandBus;
     }
 
     #[Route(path: '/verify', name: 'registration_confirmation_route')]
-    public function verifyUserEmail(Request $request) : Response
+    public function verifyUserEmail(Request $request): Response
     {
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         /** @var User $user */
         $user = $this->getUser();
         $this->verifyEmailCommand($request->getUri(), (string) $user->getId(), $user->getEmail());
         $this->addFlash('success', 'Weryfikacja przebiegła poprawnie.');
+
         return $this->redirectToRoute('homepage');
     }
 

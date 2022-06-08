@@ -24,7 +24,7 @@ class PhotoFilenameService
     {
         $originalFilename = pathinfo($photo->getClientOriginalName(), PATHINFO_FILENAME);
         $safeFilename = $this->slugger->slug($originalFilename);
-        $newFilename = $safeFilename . '-' . uniqid() . '.' . $photo->guessExtension();
+        $newFilename = $safeFilename.'-'.uniqid().'.'.$photo->guessExtension();
 
         try {
             $photo->move(

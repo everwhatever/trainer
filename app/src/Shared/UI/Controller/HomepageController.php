@@ -21,12 +21,13 @@ class HomepageController extends AbstractController
     }
 
     #[Route(path: '/', name: 'homepage')]
-    public function indexAction() : Response
+    public function indexAction(): Response
     {
         $offers = $this->entityManager->getRepository(Offer::class)->findAll();
-        return $this->render('shared/homepage.html.twig',[
+
+        return $this->render('shared/homepage.html.twig', [
             'offers' => $offers,
-            'photo_dir' => $this->shortPhotoDir
+            'photo_dir' => $this->shortPhotoDir,
         ]);
     }
 }

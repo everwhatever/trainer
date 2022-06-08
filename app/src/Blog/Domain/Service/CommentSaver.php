@@ -16,6 +16,7 @@ class CommentSaver
     {
         $this->entityManager = $entityManager;
     }
+
     public function saveComment(Comment $comment, int $userId, int $postId): void
     {
         /** @var Post $post */

@@ -24,7 +24,7 @@ class DeleteCommentController extends AbstractController
      * @throws Exception
      */
     #[Route(path: '/blog/comment/delete/{id}', name: 'blog_comment_delete')]
-    public function deleteAction(int $id) : Response
+    public function deleteAction(int $id): Response
     {
         $comment = $this->entityManager->getRepository(Comment::class)->findOneBy(['id' => $id]);
         if ($this->getUser()->getId() !== $comment->getAuthorId() && !in_array('ROLE_ADMIN', $this->getUser()->getRoles())) {
@@ -32,6 +32,7 @@ class DeleteCommentController extends AbstractController
         }
         $this->entityManager->remove($comment);
         $this->entityManager->flush();
+
         return $this->redirectToRoute('blog_display_all_posts');
     }
 }

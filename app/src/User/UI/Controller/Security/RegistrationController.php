@@ -24,18 +24,17 @@ class RegistrationController extends AbstractController
 
     private SecurityAuthenticator $securityAuthenticator;
 
-    public function __construct(MessageBusInterface        $commandBus,
+    public function __construct(MessageBusInterface $commandBus,
                                 UserAuthenticatorInterface $authenticator,
-                                SecurityAuthenticator      $securityAuthenticator,
-    )
-    {
+                                SecurityAuthenticator $securityAuthenticator,
+    ) {
         $this->commandBus = $commandBus;
         $this->authenticator = $authenticator;
         $this->securityAuthenticator = $securityAuthenticator;
     }
 
     #[Route(path: '/register', name: 'register')]
-    public function registerAction(Request $request) : Response
+    public function registerAction(Request $request): Response
     {
         $form = $this->createForm(RegisterType::class);
         $form->handleRequest($request);
@@ -48,13 +47,14 @@ class RegistrationController extends AbstractController
                 $request
             );
         }
+
         return $this->render('user/security/register.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
 
     #[Route(path: '/register/admin', name: 'register_admin')]
-    public function registerAdminAction(Request $request) : Response
+    public function registerAdminAction(Request $request): Response
     {
         $form = $this->createForm(RegisterType::class);
         $form->handleRequest($request);
@@ -67,8 +67,9 @@ class RegistrationController extends AbstractController
                 $request
             );
         }
+
         return $this->render('user/security/register.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
 

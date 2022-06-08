@@ -17,20 +17,20 @@ class CreatePostType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('title', TextType::class, [
-            'label' => 'Tytuł'
+            'label' => 'Tytuł',
         ])
             ->add('content', TextareaType::class, [
-                'label' => 'Kontent'
+                'label' => 'Kontent',
             ])
             ->add('submit', SubmitType::class, [
-                'label' => 'Zapisz'
+                'label' => 'Zapisz',
             ]);
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Post::class
+            'data_class' => Post::class,
         ]);
     }
 }

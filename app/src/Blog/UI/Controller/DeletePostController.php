@@ -20,11 +20,12 @@ class DeletePostController extends AbstractController
     }
 
     #[Route(path: '/blog/delete/{id}', name: 'blog_delete_post')]
-    public function deleteAction(int $id) : Response
+    public function deleteAction(int $id): Response
     {
         $post = $this->entityManager->getRepository(Post::class)->findOneBy(['id' => $id]);
         $this->entityManager->remove($post);
         $this->entityManager->flush();
+
         return $this->redirectToRoute('blog_display_all_posts');
     }
 }

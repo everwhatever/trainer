@@ -32,7 +32,7 @@ class EditController extends AbstractController
      * @IsGranted("ROLE_ADMIN")
      */
     #[Route(path: '/offer/edit/{id}', name: 'offer_edit')]
-    public function editAction(Request $request, int $id) : Response
+    public function editAction(Request $request, int $id): Response
     {
         $offer = $this->entityManager->getRepository(Offer::class)->findOneBy(['id' => $id]);
         $form = $this->createForm(CreateOfferType::class, $offer);
@@ -43,9 +43,10 @@ class EditController extends AbstractController
 
             return $this->redirectToRoute('offer_display_all');
         }
+
         return $this->render('product/offer/edit_offer.html.twig', [
             'form' => $form->createView(),
-            'offer_id' => $offer->getId()
+            'offer_id' => $offer->getId(),
         ]);
     }
 

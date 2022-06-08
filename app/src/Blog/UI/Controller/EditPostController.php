@@ -31,7 +31,7 @@ class EditPostController extends AbstractController
      * @IsGranted("ROLE_ADMIN")
      */
     #[Route(path: '/blog/edit/{id}', name: 'blog_edit_post')]
-    public function editAction(Request $request, int $id) : Response
+    public function editAction(Request $request, int $id): Response
     {
         $userId = $this->getUser()->getId();
         $post = $this->entityManager->getRepository(Post::class)->findOneBy(['id' => $id]);
@@ -44,9 +44,10 @@ class EditPostController extends AbstractController
 
             return $this->redirectToRoute('blog_display_one_post', ['id' => $post->getId()]);
         }
+
         return $this->render('blog/edit_post.html.twig', [
             'form' => $form->createView(),
-            'postId' => $post->getId()
+            'postId' => $post->getId(),
         ]);
     }
 

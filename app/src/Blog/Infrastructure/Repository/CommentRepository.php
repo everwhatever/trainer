@@ -4,8 +4,6 @@ namespace App\Blog\Infrastructure\Repository;
 
 use App\Blog\Domain\Model\Comment;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\ORM\OptimisticLockException;
-use Doctrine\ORM\ORMException;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**

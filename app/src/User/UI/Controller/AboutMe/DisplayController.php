@@ -24,14 +24,15 @@ class DisplayController extends AbstractController
     }
 
     #[Route(path: '/about-me/display', name: 'about_me_display_one')]
-    public function displayOneAction() : Response
+    public function displayOneAction(): Response
     {
         /** @var AboutMe $aboutMe */
         $aboutMe = $this->entityManager->getRepository(AboutMe::class)->findOneBy(['isActive' => true]);
+
         return $this->render('user/about_me/about_me_display_one.html.twig', [
             'title' => $aboutMe->getTitle(),
             'description' => $aboutMe->getDescription(),
-            'photo_dir' => $this->shortPhotoDir . $aboutMe->getPhotoFilename()
+            'photo_dir' => $this->shortPhotoDir.$aboutMe->getPhotoFilename(),
         ]);
     }
 
@@ -39,9 +40,10 @@ class DisplayController extends AbstractController
      * @IsGranted("ROLE_ADMIN")
      */
     #[Route(path: '/about-me/display/all', name: 'about_me_display_all')]
-    public function displayAllAction() : Response
+    public function displayAllAction(): Response
     {
         $aboutMeList = $this->entityManager->getRepository(AboutMe::class)->findAll();
+
         return $this->render('user/about_me/about_me_display_all.html.twig', [
             'aboutMeList' => $aboutMeList,
         ]);

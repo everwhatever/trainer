@@ -27,7 +27,7 @@ class CreatePostController extends AbstractController
      * @IsGranted("ROLE_ADMIN")
      */
     #[Route(path: '/blog/create', name: 'blog_create_post')]
-    public function createAction(Request $request) : Response
+    public function createAction(Request $request): Response
     {
         $userId = $this->getUser()->getId();
         $form = $this->createForm(CreatePostType::class);
@@ -39,8 +39,9 @@ class CreatePostController extends AbstractController
 
             return $this->redirectToRoute('blog_display_all_posts');
         }
+
         return $this->render('blog/create_post.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
 
