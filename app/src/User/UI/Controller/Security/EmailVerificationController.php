@@ -21,19 +21,14 @@ class EmailVerificationController extends AbstractController
         $this->commandBus = $commandBus;
     }
 
-    /**
-     * @Route("/verify", name="registration_confirmation_route")
-     */
-    public function verifyUserEmail(Request $request): Response
+    #[Route(path: '/verify', name: 'registration_confirmation_route')]
+    public function verifyUserEmail(Request $request) : Response
     {
         $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
         /** @var User $user */
         $user = $this->getUser();
-
         $this->verifyEmailCommand($request->getUri(), (string) $user->getId(), $user->getEmail());
-
         $this->addFlash('success', 'Weryfikacja przebiegła poprawnie.');
-
         return $this->redirectToRoute('homepage');
     }
 

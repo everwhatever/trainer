@@ -20,13 +20,10 @@ class HomepageController extends AbstractController
         $this->shortPhotoDir = $shortPhotoDir;
     }
 
-    /**
-     * @Route("/", name="homepage")
-     */
-    public function indexAction(): Response
+    #[Route(path: '/', name: 'homepage')]
+    public function indexAction() : Response
     {
         $offers = $this->entityManager->getRepository(Offer::class)->findAll();
-
         return $this->render('shared/homepage.html.twig',[
             'offers' => $offers,
             'photo_dir' => $this->shortPhotoDir

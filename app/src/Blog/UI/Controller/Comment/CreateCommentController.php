@@ -22,15 +22,12 @@ class CreateCommentController extends AbstractController
         $this->commandBus = $commandBus;
     }
 
-    /**
-     * @Route("/blog/{postId}/comment/create", name="blog_comment_create")
-     */
-    public function createAction(Request $request, int $postId): Response
+    #[Route(path: '/blog/{postId}/comment/create', name: 'blog_comment_create')]
+    public function createAction(Request $request, int $postId) : Response
     {
         $userId = $this->getUser()->getId();
         $form = $this->createForm(CreateCommentType::class);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $comment = $form->getData();
 
@@ -38,7 +35,6 @@ class CreateCommentController extends AbstractController
 
             return $this->redirectToRoute('blog_display_one_post', ['id' => $postId]);
         }
-
         return $this->render('blog/create_comment.html.twig', [
             'form' => $form->createView()
         ]);

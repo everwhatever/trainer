@@ -29,22 +29,20 @@ class EditController extends AbstractController
     }
 
     /**
-     * @Route("/offer/edit/{id}", name="offer_edit")
      * @IsGranted("ROLE_ADMIN")
      */
-    public function editAction(Request $request, int $id): Response
+    #[Route(path: '/offer/edit/{id}', name: 'offer_edit')]
+    public function editAction(Request $request, int $id) : Response
     {
         $offer = $this->entityManager->getRepository(Offer::class)->findOneBy(['id' => $id]);
         $form = $this->createForm(CreateOfferType::class, $offer);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $offer = $form->getData();
             $this->command($form->get('photo')->getData(), $offer);
 
             return $this->redirectToRoute('offer_display_all');
         }
-
         return $this->render('product/offer/edit_offer.html.twig', [
             'form' => $form->createView(),
             'offer_id' => $offer->getId()

@@ -26,21 +26,19 @@ class CreateController extends AbstractController
 
 
     /**
-     * @Route("/about-me/create", name="aboute_me_create")
      * @IsGranted("ROLE_ADMIN")
      */
-    public function createAction(Request $request): Response
+    #[Route(path: '/about-me/create', name: 'aboute_me_create')]
+    public function createAction(Request $request) : Response
     {
         $form = $this->createForm(AboutMeType::class);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $aboutMe = $form->getData();
             $this->command($form->get('photo')->getData(), $aboutMe);
 
             return $this->redirectToRoute('about_me_display_one');
         }
-
         return $this->render('user/about_me/about_me_edit.html.twig', [
             'form' => $form->createView()
         ]);

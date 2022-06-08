@@ -28,16 +28,15 @@ class EditPostController extends AbstractController
     }
 
     /**
-     * @Route("/blog/edit/{id}", name="blog_edit_post")
      * @IsGranted("ROLE_ADMIN")
      */
-    public function editAction(Request $request, int $id): Response
+    #[Route(path: '/blog/edit/{id}', name: 'blog_edit_post')]
+    public function editAction(Request $request, int $id) : Response
     {
         $userId = $this->getUser()->getId();
         $post = $this->entityManager->getRepository(Post::class)->findOneBy(['id' => $id]);
         $form = $this->createForm(CreatePostType::class, $post);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $post = $form->getData();
 
@@ -45,7 +44,6 @@ class EditPostController extends AbstractController
 
             return $this->redirectToRoute('blog_display_one_post', ['id' => $post->getId()]);
         }
-
         return $this->render('blog/edit_post.html.twig', [
             'form' => $form->createView(),
             'postId' => $post->getId()

@@ -14,41 +14,29 @@ use Symfony\Component\Messenger\MessageBusInterface;
 use Symfony\Component\Messenger\Stamp\HandledStamp;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * @Route("/blog/display")
- */
+#[Route(path: '/blog/display')]
 class DisplayController extends AbstractController
 {
     private EntityManagerInterface $entityManager;
-
     private MessageBusInterface $queryBus;
-
     public function __construct(EntityManagerInterface $entityManager, MessageBusInterface $queryBus)
     {
         $this->entityManager = $entityManager;
         $this->queryBus = $queryBus;
     }
-
-    /**
-     * @Route("/all", name="blog_display_all_posts")
-     */
-    public function displayAllPostsAction(): Response
+    #[Route(path: '/all', name: 'blog_display_all_posts')]
+    public function displayAllPostsAction() : Response
     {
         $posts = $this->entityManager->getRepository(Post::class)->findAll();
-
         return $this->render('blog/display_all_posts.html.twig', [
             'posts' => $posts
         ]);
     }
-
-    /**
-     * @Route("/one/{id}", name="blog_display_one_post")
-     */
-    public function displayOnePostAction(int $id): Response
+    #[Route(path: '/one/{id}', name: 'blog_display_one_post')]
+    public function displayOnePostAction(int $id) : Response
     {
         $postDTO = $this->query($id);
         $authorInfo = $postDTO->getAuthorInfo();
-
         return $this->render('blog/display_one_post.html.twig', [
             'title' => $postDTO->getTitle(),
             'content' => $postDTO->getContent(),
@@ -59,7 +47,6 @@ class DisplayController extends AbstractController
             'post_id' => $postDTO->getPostId()
         ]);
     }
-
     private function query(int $id): PostDTO
     {
         $message = new DisplayOnePostQuery($id);

@@ -90,6 +90,7 @@
     "require-dev": {
         "doctrine/data-fixtures": "^1.5",
         "phpunit/phpunit": "^9.5",
+        "rector/rector": "^0.13.4",
         "symfony/browser-kit": "5.4.*",
         "symfony/css-selector": "5.4.*",
         "symfony/phpunit-bridge": "^6.0",

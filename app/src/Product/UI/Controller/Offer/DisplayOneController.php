@@ -22,14 +22,11 @@ class DisplayOneController extends AbstractController
         $this->shortPhotoDir = $shortPhotoDir;
     }
 
-    /**
-     * @Route("/offer/display/{id}", name="display_one_offer")
-     */
-    public function displayAction(int $id): Response
+    #[Route(path: '/offer/display/{id}', name: 'display_one_offer')]
+    public function displayAction(int $id) : Response
     {
         /** @var Offer $offer */
         $offer = $this->entityManager->getRepository(Offer::class)->findOneBy(['id' => $id]);
-
         return $this->render('product/offer/display_one.html.twig', [
             'name' => $offer->getName(),
             'description' => $offer->getDescription(),

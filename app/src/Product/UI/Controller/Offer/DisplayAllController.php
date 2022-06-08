@@ -22,13 +22,10 @@ class DisplayAllController extends AbstractController
         $this->shortPhotoDir = $shortPhotoDir;
     }
 
-    /**
-     * @Route("/offer/display", name="offer_display_all")
-     */
-    public function displayAction(): Response
+    #[Route(path: '/offer/display', name: 'offer_display_all')]
+    public function displayAction() : Response
     {
         $offers = $this->entityManager->getRepository(Offer::class)->findAll();
-
         return $this->render('product/offer/display_all.html.twig', [
             'offers' => $offers,
             'photo_dir' => $this->shortPhotoDir

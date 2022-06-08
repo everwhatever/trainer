@@ -34,14 +34,11 @@ class RegistrationController extends AbstractController
         $this->securityAuthenticator = $securityAuthenticator;
     }
 
-    /**
-     * @Route("/register", name="register")
-     */
-    public function registerAction(Request $request): Response
+    #[Route(path: '/register', name: 'register')]
+    public function registerAction(Request $request) : Response
     {
         $form = $this->createForm(RegisterType::class);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $user = $this->registerCommand($form->getData()['email'], $form->get('plainPassword')->getData());
 
@@ -51,20 +48,16 @@ class RegistrationController extends AbstractController
                 $request
             );
         }
-
         return $this->render('user/security/register.html.twig', [
             'form' => $form->createView()
         ]);
     }
 
-    /**
-     * @Route("/register/admin", name="register_admin")
-     */
-    public function registerAdminAction(Request $request): Response
+    #[Route(path: '/register/admin', name: 'register_admin')]
+    public function registerAdminAction(Request $request) : Response
     {
         $form = $this->createForm(RegisterType::class);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $user = $this->registerCommand($form->getData()['email'], $form->get('plainPassword')->getData(), 'ROLE_ADMIN');
 
@@ -74,7 +67,6 @@ class RegistrationController extends AbstractController
                 $request
             );
         }
-
         return $this->render('user/security/register.html.twig', [
             'form' => $form->createView()
         ]);

@@ -17,14 +17,12 @@ class ContactController extends AbstractController
 {
     private MessageBusInterface $commandBus;
 
-    public function __construct(MessageBusInterface $commandBus,)
+    public function __construct(MessageBusInterface $commandBus)
     {
         $this->commandBus = $commandBus;
     }
 
-    /**
-     * @Route("/contact", name="app_contact")
-     */
+    #[Route(path: '/contact', name: 'app_contact')]
     public function sendContactEmail(Request $request): Response
     {
         $form = $this->createForm(ContactType::class);
