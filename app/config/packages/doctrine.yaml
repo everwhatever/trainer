@@ -12,19 +12,19 @@ doctrine:
         mappings:
             User:
                 is_bundle: false
-                type: annotation
+                type: attribute
                 dir: '%kernel.project_dir%/src/User/Domain/Model'
                 prefix: 'App\User\Domain\Model'
                 alias: User
             Blog:
                 is_bundle: false
-                type: annotation
+                type: attribute
                 dir: '%kernel.project_dir%/src/Blog/Domain/Model'
                 prefix: 'App\Blog\Domain\Model'
                 alias: User
             Product:
                 is_bundle: false
-                type: annotation
+                type: attribute
                 dir: '%kernel.project_dir%/src/Product/Domain/Model'
                 prefix: 'App\Product\Domain\Model'
                 alias: Product
