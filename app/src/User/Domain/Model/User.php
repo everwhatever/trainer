@@ -21,29 +21,24 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private int $id;
 
     /**
-     * @ORM\Column(type="string", length=180, unique=true)
+     * @ORM\Column(type="string", length=180, nullable="true")
      */
-    private string $email;
+    private ?string $firstName = null;
 
     /**
      * @ORM\Column(type="string", length=180, nullable="true")
      */
-    private ?string $firstName;
-
-    /**
-     * @ORM\Column(type="string", length=180, nullable="true")
-     */
-    private ?string $lastName;
+    private ?string $lastName = null;
 
     /**
      * @ORM\Column(type="string", length=350, nullable="true")
      */
-    private ?string $address;
+    private ?string $address = null;
 
     /**
      * @ORM\Column(type="integer", nullable="true")
      */
-    private ?int $phoneNumber;
+    private ?int $phoneNumber = null;
 
     /**
      * @ORM\Column(type="json")
@@ -61,9 +56,13 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private bool $verified = false;
 
-    public function __construct(string $email)
+    public function __construct(
+        /**
+         * @ORM\Column(type="string", length=180, unique=true)
+         */
+        private string $email
+    )
     {
-        $this->email = $email;
     }
 
     public function getId(): ?int

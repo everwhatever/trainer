@@ -15,14 +15,8 @@ use SymfonyCasts\Bundle\VerifyEmail\VerifyEmailHelperInterface;
 
 class EmailVerificationHandler implements MessageHandlerInterface
 {
-    private VerifyEmailHelperInterface $verifyEmailHelper;
-
-    private EntityManagerInterface $entityManager;
-
-    public function __construct(VerifyEmailHelperInterface $verifyEmailHelper, EntityManagerInterface $entityManager)
+    public function __construct(private VerifyEmailHelperInterface $verifyEmailHelper, private EntityManagerInterface $entityManager)
     {
-        $this->verifyEmailHelper = $verifyEmailHelper;
-        $this->entityManager = $entityManager;
     }
 
     /**

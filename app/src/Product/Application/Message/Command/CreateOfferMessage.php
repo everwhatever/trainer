@@ -9,14 +9,8 @@ use Symfony\Component\HttpFoundation\File\File;
 
 class CreateOfferMessage
 {
-    private File $photo;
-
-    private Offer $offer;
-
-    public function __construct(File $photo, Offer $offer)
+    public function __construct(private File $photo, private Offer $offer)
     {
-        $this->photo = $photo;
-        $this->offer = $offer;
     }
 
     public function getPhoto(): File

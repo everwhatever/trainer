@@ -13,11 +13,8 @@ use Symfony\Component\Mime\Email;
 
 class ContactHandler implements MessageHandlerInterface
 {
-    private MailerInterface $mailer;
-
-    public function __construct(MailerInterface $mailer)
+    public function __construct(private MailerInterface $mailer)
     {
-        $this->mailer = $mailer;
     }
 
     /**

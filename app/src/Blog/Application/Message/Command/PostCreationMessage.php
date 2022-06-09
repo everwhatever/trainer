@@ -8,14 +8,8 @@ use App\Blog\Domain\Model\Post;
 
 class PostCreationMessage
 {
-    private Post $post;
-
-    private ?int $userId;
-
-    public function __construct(Post $post, int $userId)
+    public function __construct(private Post $post, private ?int $userId)
     {
-        $this->post = $post;
-        $this->userId = $userId;
     }
 
     public function getPost(): Post

@@ -11,14 +11,8 @@ use Symfony\Component\HttpFoundation\File\File;
 
 class AboutMeCreatorService
 {
-    private EntityManagerInterface $entityManager;
-
-    private PhotoFilenameService $filenameService;
-
-    public function __construct(EntityManagerInterface $entityManager, PhotoFilenameService $filenameService)
+    public function __construct(private EntityManagerInterface $entityManager, private PhotoFilenameService $filenameService)
     {
-        $this->entityManager = $entityManager;
-        $this->filenameService = $filenameService;
     }
 
     public function create(File $photo, AboutMe $aboutMe): void

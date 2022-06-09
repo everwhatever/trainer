@@ -6,17 +6,8 @@ namespace App\User\Application\Message\Command;
 
 class EmailVerificationMessage
 {
-    private string $requestUri;
-
-    private string $userId;
-
-    private string $userEmail;
-
-    public function __construct(string $requestUri, string $userId, string $userEmail)
+    public function __construct(private string $requestUri, private string $userId, private string $userEmail)
     {
-        $this->requestUri = $requestUri;
-        $this->userId = $userId;
-        $this->userEmail = $userEmail;
     }
 
     public function getRequestUri(): string

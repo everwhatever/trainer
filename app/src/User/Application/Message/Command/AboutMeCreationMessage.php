@@ -9,14 +9,8 @@ use Symfony\Component\HttpFoundation\File\File;
 
 class AboutMeCreationMessage
 {
-    private File $photo;
-
-    private AboutMe $aboutMe;
-
-    public function __construct(File $photo, AboutMe $aboutMe)
+    public function __construct(private File $photo, private AboutMe $aboutMe)
     {
-        $this->photo = $photo;
-        $this->aboutMe = $aboutMe;
     }
 
     public function getPhoto(): File

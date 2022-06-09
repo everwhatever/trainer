@@ -15,11 +15,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CreateCommentController extends AbstractController
 {
-    private MessageBusInterface $commandBus;
-
-    public function __construct(MessageBusInterface $commandBus)
+    public function __construct(private MessageBusInterface $commandBus)
     {
-        $this->commandBus = $commandBus;
     }
 
     #[Route(path: '/blog/{postId}/comment/create', name: 'blog_comment_create')]

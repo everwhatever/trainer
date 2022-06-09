@@ -12,11 +12,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DeletePostController extends AbstractController
 {
-    private EntityManagerInterface $entityManager;
-
-    public function __construct(EntityManagerInterface $entityManager)
+    public function __construct(private EntityManagerInterface $entityManager)
     {
-        $this->entityManager = $entityManager;
     }
 
     #[Route(path: '/blog/delete/{id}', name: 'blog_delete_post')]

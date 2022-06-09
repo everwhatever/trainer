@@ -8,23 +8,8 @@ use App\Blog\Domain\Model\Post;
 
 class PostDTO
 {
-    private string $title;
-
-    private string $content;
-
-    private int $postId;
-
-    private array $comments;
-
-    private array $authorInfo;
-
-    private function __construct(string $title, string $content, int $postId, array $comments, array $authorInfo)
+    private function __construct(private string $title, private string $content, private int $postId, private array $comments, private array $authorInfo)
     {
-        $this->title = $title;
-        $this->content = $content;
-        $this->postId = $postId;
-        $this->comments = $comments;
-        $this->authorInfo = $authorInfo;
     }
 
     public static function create(Post $post, array $comments, array $authorInfo): self

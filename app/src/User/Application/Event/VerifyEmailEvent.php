@@ -10,14 +10,8 @@ class VerifyEmailEvent extends Event
 {
     public const NAME = 'user.email_verified';
 
-    private string $userEmail;
-
-    private string $userId;
-
-    public function __construct(string $userEmail, string $userId)
+    public function __construct(private string $userEmail, private string $userId)
     {
-        $this->userEmail = $userEmail;
-        $this->userId = $userId;
     }
 
     public function getUserEmail(): string

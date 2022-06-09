@@ -12,19 +12,8 @@ use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 class UserCreatorService
 {
-    private EntityManagerInterface $entityManager;
-
-    private UserPasswordHasherInterface $passwordHasher;
-
-    private EventDispatcherInterface $eventDispatcher;
-
-    public function __construct(EntityManagerInterface $entityManager,
-                                UserPasswordHasherInterface $passwordHasher,
-                                EventDispatcherInterface $eventDispatcher)
+    public function __construct(private EntityManagerInterface $entityManager, private UserPasswordHasherInterface $passwordHasher, private EventDispatcherInterface $eventDispatcher)
     {
-        $this->entityManager = $entityManager;
-        $this->passwordHasher = $passwordHasher;
-        $this->eventDispatcher = $eventDispatcher;
     }
 
     public function createUser(string $email, string $plainPassword, string $role): User

@@ -10,14 +10,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomepageController extends AbstractController
 {
-    private EntityManagerInterface $entityManager;
-
-    private string $shortPhotoDir;
-
-    public function __construct(EntityManagerInterface $entityManager, string $shortPhotoDir)
+    public function __construct(private EntityManagerInterface $entityManager, private string $shortPhotoDir)
     {
-        $this->entityManager = $entityManager;
-        $this->shortPhotoDir = $shortPhotoDir;
     }
 
     #[Route(path: '/', name: 'homepage')]

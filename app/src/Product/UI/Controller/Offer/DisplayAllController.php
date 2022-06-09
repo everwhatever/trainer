@@ -12,14 +12,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DisplayAllController extends AbstractController
 {
-    private EntityManagerInterface $entityManager;
-
-    private string $shortPhotoDir;
-
-    public function __construct(EntityManagerInterface $entityManager, string $shortPhotoDir)
+    public function __construct(private EntityManagerInterface $entityManager, private string $shortPhotoDir)
     {
-        $this->entityManager = $entityManager;
-        $this->shortPhotoDir = $shortPhotoDir;
     }
 
     #[Route(path: '/offer/display', name: 'offer_display_all')]

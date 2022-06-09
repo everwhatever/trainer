@@ -17,14 +17,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class EditPostController extends AbstractController
 {
-    private MessageBusInterface $commandBus;
-
-    private EntityManagerInterface $entityManager;
-
-    public function __construct(MessageBusInterface $commandBus, EntityManagerInterface $entityManager)
+    public function __construct(private MessageBusInterface $commandBus, private EntityManagerInterface $entityManager)
     {
-        $this->commandBus = $commandBus;
-        $this->entityManager = $entityManager;
     }
 
     /**

@@ -17,13 +17,8 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route(path: '/blog/display')]
 class DisplayController extends AbstractController
 {
-    private EntityManagerInterface $entityManager;
-    private MessageBusInterface $queryBus;
-
-    public function __construct(EntityManagerInterface $entityManager, MessageBusInterface $queryBus)
+    public function __construct(private EntityManagerInterface $entityManager, private MessageBusInterface $queryBus)
     {
-        $this->entityManager = $entityManager;
-        $this->queryBus = $queryBus;
     }
 
     #[Route(path: '/all', name: 'blog_display_all_posts')]

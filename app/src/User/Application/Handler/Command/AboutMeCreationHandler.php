@@ -10,11 +10,8 @@ use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
 class AboutMeCreationHandler implements MessageHandlerInterface
 {
-    private AboutMeCreatorService $aboutMeCreator;
-
-    public function __construct(AboutMeCreatorService $aboutMeCreator)
+    public function __construct(private AboutMeCreatorService $aboutMeCreator)
     {
-        $this->aboutMeCreator = $aboutMeCreator;
     }
 
     public function __invoke(AboutMeCreationMessage $message): void

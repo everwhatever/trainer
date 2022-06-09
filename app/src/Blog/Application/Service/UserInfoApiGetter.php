@@ -6,14 +6,8 @@ namespace App\Blog\Application\Service;
 
 class UserInfoApiGetter
 {
-    private string $localhostAddress;
-
-    private string $graphqlUserInfoAddress;
-
-    public function __construct(string $localhostAddress, string $graphqlUserInfoAddress)
+    public function __construct(private string $localhostAddress, private string $graphqlUserInfoAddress)
     {
-        $this->localhostAddress = $localhostAddress;
-        $this->graphqlUserInfoAddress = $graphqlUserInfoAddress;
     }
 
     public function getUserInfoById(array $userIds, string $requireFields): array
@@ -25,16 +19,16 @@ class UserInfoApiGetter
         $context = stream_context_create($options);
         $result = file_get_contents($endpoint, false, $context);
 
-        $result = json_decode($result, true);
+        $result = json_decode($result, true, 512, JSON_THROW_ON_ERROR);
 
         return $result['data']['byId'] ?? [];
     }
 
     private function prepareQuery(array $userIds, string $requireFields): array
     {
-        $query = 'query {byId(userIds: '.json_encode($userIds).'){'.$requireFields.'}}';
+        $query = 'query {byId(userIds: '.json_encode($userIds, JSON_THROW_ON_ERROR).'){'.$requireFields.'}}';
         $data = ['query' => $query];
-        $data = json_encode($data);
+        $data = json_encode($data, JSON_THROW_ON_ERROR);
 
         return [
             'http' => [

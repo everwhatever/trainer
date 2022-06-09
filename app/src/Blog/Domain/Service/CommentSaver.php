@@ -10,11 +10,8 @@ use Doctrine\ORM\EntityManagerInterface;
 
 class CommentSaver
 {
-    private EntityManagerInterface $entityManager;
-
-    public function __construct(EntityManagerInterface $entityManager)
+    public function __construct(private EntityManagerInterface $entityManager)
     {
-        $this->entityManager = $entityManager;
     }
 
     public function saveComment(Comment $comment, int $userId, int $postId): void

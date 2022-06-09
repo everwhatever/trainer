@@ -13,14 +13,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DisplayController extends AbstractController
 {
-    private EntityManagerInterface $entityManager;
-
-    private string $shortPhotoDir;
-
-    public function __construct(EntityManagerInterface $entityManager, string $shortPhotoDir)
+    public function __construct(private EntityManagerInterface $entityManager, private string $shortPhotoDir)
     {
-        $this->entityManager = $entityManager;
-        $this->shortPhotoDir = $shortPhotoDir;
     }
 
     #[Route(path: '/about-me/display', name: 'about_me_display_one')]

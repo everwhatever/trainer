@@ -11,14 +11,8 @@ use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
 class CreateOfferHandler implements MessageHandlerInterface
 {
-    private EntityManagerInterface $entityManager;
-
-    private PhotoFilenameService $filenameService;
-
-    public function __construct(EntityManagerInterface $entityManager, PhotoFilenameService $filenameService)
+    public function __construct(private EntityManagerInterface $entityManager, private PhotoFilenameService $filenameService)
     {
-        $this->entityManager = $entityManager;
-        $this->filenameService = $filenameService;
     }
 
     public function __invoke(CreateOfferMessage $message): void

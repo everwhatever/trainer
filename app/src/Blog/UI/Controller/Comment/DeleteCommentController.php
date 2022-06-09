@@ -13,11 +13,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DeleteCommentController extends AbstractController
 {
-    private EntityManagerInterface $entityManager;
-
-    public function __construct(EntityManagerInterface $entityManager)
+    public function __construct(private EntityManagerInterface $entityManager)
     {
-        $this->entityManager = $entityManager;
     }
 
     /**

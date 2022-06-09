@@ -11,13 +11,8 @@ use Doctrine\ORM\EntityManagerInterface;
 
 class DisplayPostInfoFetcher
 {
-    private UserInfoApiGetter $apiGetter;
-    private EntityManagerInterface $entityManager;
-
-    public function __construct(UserInfoApiGetter $apiGetter, EntityManagerInterface $entityManager)
+    public function __construct(private UserInfoApiGetter $apiGetter, private EntityManagerInterface $entityManager)
     {
-        $this->apiGetter = $apiGetter;
-        $this->entityManager = $entityManager;
     }
 
     public function fetch(int $postId): PostDTO

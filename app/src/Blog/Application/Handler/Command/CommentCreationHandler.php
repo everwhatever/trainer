@@ -10,11 +10,8 @@ use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
 class CommentCreationHandler implements MessageHandlerInterface
 {
-    private CommentSaver $commentSaver;
-
-    public function __construct(CommentSaver $commentSaver)
+    public function __construct(private CommentSaver $commentSaver)
     {
-        $this->commentSaver = $commentSaver;
     }
 
     public function __invoke(CommentCreationMessage $message): void

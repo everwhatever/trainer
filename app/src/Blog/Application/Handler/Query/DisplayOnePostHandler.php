@@ -11,11 +11,8 @@ use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
 class DisplayOnePostHandler implements MessageHandlerInterface
 {
-    private DisplayPostInfoFetcher $infoFetcher;
-
-    public function __construct(DisplayPostInfoFetcher $infoFetcher)
+    public function __construct(private DisplayPostInfoFetcher $infoFetcher)
     {
-        $this->infoFetcher = $infoFetcher;
     }
 
     public function __invoke(DisplayOnePostQuery $query): PostDTO

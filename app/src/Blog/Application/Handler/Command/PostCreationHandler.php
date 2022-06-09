@@ -10,11 +10,8 @@ use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
 class PostCreationHandler implements MessageHandlerInterface
 {
-    private PostSaver $postSaver;
-
-    public function __construct(PostSaver $postSaver)
+    public function __construct(private PostSaver $postSaver)
     {
-        $this->postSaver = $postSaver;
     }
 
     public function __invoke(PostCreationMessage $message): void

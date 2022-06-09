@@ -14,11 +14,8 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class EmailVerificationController extends AbstractController
 {
-    private MessageBusInterface $commandBus;
-
-    public function __construct(MessageBusInterface $commandBus)
+    public function __construct(private MessageBusInterface $commandBus)
     {
-        $this->commandBus = $commandBus;
     }
 
     #[Route(path: '/verify', name: 'registration_confirmation_route')]

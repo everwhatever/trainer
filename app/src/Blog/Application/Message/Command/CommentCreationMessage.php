@@ -8,17 +8,8 @@ use App\Blog\Domain\Model\Comment;
 
 class CommentCreationMessage
 {
-    private Comment $comment;
-
-    private int $userId;
-
-    private int $postId;
-
-    public function __construct(Comment $comment, int $userId, int $postId)
+    public function __construct(private Comment $comment, private int $userId, private int $postId)
     {
-        $this->comment = $comment;
-        $this->userId = $userId;
-        $this->postId = $postId;
     }
 
     public function getComment(): Comment

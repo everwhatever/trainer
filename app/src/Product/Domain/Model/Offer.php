@@ -32,17 +32,17 @@ class Offer
     /**
      * @ORM\Column(type="integer", nullable="true")
      */
-    private ?int $price;
+    private ?int $price = null;
 
     /**
      * @ORM\Column(type="string", length=100, nullable="true")
      */
-    private ?string $duration;
+    private ?string $duration = null;
 
     /**
      * @ORM\Column(type="string", nullable="true")
      */
-    private ?string $photoFilename;
+    private ?string $photoFilename = null;
 
     public function getId(): ?int
     {

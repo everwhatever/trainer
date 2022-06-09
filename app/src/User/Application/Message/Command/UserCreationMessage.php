@@ -4,17 +4,8 @@ namespace App\User\Application\Message\Command;
 
 class UserCreationMessage
 {
-    private string $email;
-
-    private string $plainPassword;
-
-    private string $role;
-
-    public function __construct(string $email, string $plainPassword, $role)
+    public function __construct(private string $email, private string $plainPassword, private $role)
     {
-        $this->email = $email;
-        $this->plainPassword = $plainPassword;
-        $this->role = $role;
     }
 
     public function getEmail(): string
