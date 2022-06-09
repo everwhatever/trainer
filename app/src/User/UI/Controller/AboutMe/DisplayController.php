@@ -30,10 +30,8 @@ class DisplayController extends AbstractController
         ]);
     }
 
-    /**
-     * @IsGranted("ROLE_ADMIN")
-     */
     #[Route(path: '/about-me/display/all', name: 'about_me_display_all')]
+    #[IsGranted('ROLE_ADMIN')]
     public function displayAllAction(): Response
     {
         $aboutMeList = $this->entityManager->getRepository(AboutMe::class)->findAll();

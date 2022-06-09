@@ -7,62 +7,42 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
-/**
- * @ORM\Entity(repositoryClass=UserRepository::class)
- * @ORM\Table(name="`user`")
- */
+#[ORM\Entity(repositoryClass: UserRepository::class)]
+#[ORM\Table(name: '`user`')]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
-    /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column(type: 'integer')]
     private int $id;
 
-    /**
-     * @ORM\Column(type="string", length=180, nullable="true")
-     */
+    #[ORM\Column(type: 'string', length: 180, nullable: true)]
     private ?string $firstName = null;
 
-    /**
-     * @ORM\Column(type="string", length=180, nullable="true")
-     */
+    #[ORM\Column(type: 'string', length: 180, nullable: true)]
     private ?string $lastName = null;
 
-    /**
-     * @ORM\Column(type="string", length=350, nullable="true")
-     */
+    #[ORM\Column(type: 'string', length: 350, nullable: true)]
     private ?string $address = null;
 
-    /**
-     * @ORM\Column(type="integer", nullable="true")
-     */
+    #[ORM\Column(type: 'integer', nullable: true)]
     private ?int $phoneNumber = null;
 
-    /**
-     * @ORM\Column(type="json")
-     */
+    #[ORM\Column(type: 'json')]
     private array $roles = [];
 
     /**
      * @var string The hashed password
-     * @ORM\Column(type="string")
      */
+    #[ORM\Column(type: 'string')]
     private string $password;
 
-    /**
-     * @ORM\Column(type="boolean", options={"default":false})
-     */
+    #[ORM\Column(type: 'boolean', options: ['default' => false])]
     private bool $verified = false;
 
     public function __construct(
-        /**
-         * @ORM\Column(type="string", length=180, unique=true)
-         */
-        private string $email
-    )
-    {
+        #[ORM\Column(type: 'string', length: 180, unique: true)] private string $email
+    ) {
     }
 
     public function getId(): ?int

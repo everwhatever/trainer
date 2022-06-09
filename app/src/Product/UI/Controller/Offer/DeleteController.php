@@ -17,10 +17,8 @@ class DeleteController extends AbstractController
     {
     }
 
-    /**
-     * @IsGranted("ROLE_ADMIN")
-     */
     #[Route(path: '/offer/delete/{id}', name: 'offer_delete')]
+    #[IsGranted('ROLE_ADMIN')]
     public function deleteAction(int $id): Response
     {
         $offer = $this->entityManager->getRepository(Offer::class)->findOneBy(['id' => $id]);

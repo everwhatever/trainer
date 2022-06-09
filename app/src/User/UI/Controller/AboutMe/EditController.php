@@ -22,10 +22,8 @@ class EditController extends AbstractController
     {
     }
 
-    /**
-     * @IsGranted("ROLE_ADMIN")
-     */
     #[Route(path: '/about-me/edit/{id}', name: 'aboute_me_edit')]
+    #[IsGranted('ROLE_ADMIN')]
     public function editAction(Request $request, int $id): Response
     {
         $aboutMe = $this->entityManager->getRepository(AboutMe::class)->findOneBy(['id' => $id]);

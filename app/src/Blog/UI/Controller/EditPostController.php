@@ -21,10 +21,8 @@ class EditPostController extends AbstractController
     {
     }
 
-    /**
-     * @IsGranted("ROLE_ADMIN")
-     */
     #[Route(path: '/blog/edit/{id}', name: 'blog_edit_post')]
+    #[IsGranted('ROLE_ADMIN')]
     public function editAction(Request $request, int $id): Response
     {
         $userId = $this->getUser()->getId();

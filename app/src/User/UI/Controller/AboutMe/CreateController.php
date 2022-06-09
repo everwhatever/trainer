@@ -21,10 +21,8 @@ class CreateController extends AbstractController
     {
     }
 
-    /**
-     * @IsGranted("ROLE_ADMIN")
-     */
     #[Route(path: '/about-me/create', name: 'aboute_me_create')]
+    #[IsGranted('ROLE_ADMIN')]
     public function createAction(Request $request): Response
     {
         $form = $this->createForm(AboutMeType::class);

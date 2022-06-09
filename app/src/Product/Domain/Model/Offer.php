@@ -7,41 +7,27 @@ namespace App\Product\Domain\Model;
 use App\Product\Infrastructure\Repository\OfferRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass=OfferRepository::class)
- */
+#[ORM\Entity(repositoryClass: OfferRepository::class)]
 class Offer
 {
-    /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column(type: 'integer')]
     private int $id;
 
-    /**
-     * @ORM\Column(type="string", length=180)
-     */
+    #[ORM\Column(type: 'string', length: 180)]
     private string $name;
 
-    /**
-     * @ORM\Column(type="text")
-     */
+    #[ORM\Column(type: 'text')]
     private string $description;
 
-    /**
-     * @ORM\Column(type="integer", nullable="true")
-     */
+    #[ORM\Column(type: 'integer', nullable: true)]
     private ?int $price = null;
 
-    /**
-     * @ORM\Column(type="string", length=100, nullable="true")
-     */
+    #[ORM\Column(type: 'string', length: 100, nullable: true)]
     private ?string $duration = null;
 
-    /**
-     * @ORM\Column(type="string", nullable="true")
-     */
+    #[ORM\Column(type: 'string', nullable: true)]
     private ?string $photoFilename = null;
 
     public function getId(): ?int

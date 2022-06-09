@@ -7,37 +7,25 @@ namespace App\User\Domain\Model;
 use App\User\Infrastructure\Repository\AboutMeRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-/**
- * @ORM\Entity(repositoryClass=AboutMeRepository::class)
- * @ORM\Table(name="`about_me`")
- */
+#[ORM\Entity(repositoryClass: AboutMeRepository::class)]
+#[ORM\Table(name: '`about_me`')]
 class AboutMe
 {
-    /**
-     * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
-     */
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column(type: 'integer')]
     private int $id;
 
-    /**
-     * @ORM\Column(type="string")
-     */
+    #[ORM\Column(type: 'string')]
     private string $photoFilename;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
+    #[ORM\Column(type: 'string', length: 255)]
     private string $title;
 
-    /**
-     * @ORM\Column(type="text")
-     */
+    #[ORM\Column(type: 'text')]
     private string $description;
 
-    /**
-     * @ORM\Column(type="boolean", options={"default":false})
-     */
+    #[ORM\Column(type: 'boolean', options: ['default' => false])]
     private bool $isActive;
 
     public function getId(): int

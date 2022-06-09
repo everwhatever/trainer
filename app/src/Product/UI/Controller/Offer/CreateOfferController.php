@@ -15,9 +15,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Messenger\MessageBusInterface;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * @IsGranted("ROLE_ADMIN")
- */
+#[IsGranted('ROLE_ADMIN')]
 class CreateOfferController extends AbstractController
 {
     public function __construct(private MessageBusInterface $commandBus)

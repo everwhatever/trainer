@@ -20,10 +20,8 @@ class CreatePostController extends AbstractController
     {
     }
 
-    /**
-     * @IsGranted("ROLE_ADMIN")
-     */
     #[Route(path: '/blog/create', name: 'blog_create_post')]
+    #[IsGranted('ROLE_ADMIN')]
     public function createAction(Request $request): Response
     {
         $userId = $this->getUser()->getId();

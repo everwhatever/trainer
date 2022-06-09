@@ -2,13 +2,17 @@
 
 declare(strict_types=1);
 
+use Rector\Doctrine\Set\DoctrineSetList;
+use Rector\Symfony\Set\SymfonySetList;
+use Rector\Symfony\Set\SensiolabsSetList;
+use Rector\Nette\Set\NetteSetList;
 use Rector\Config\RectorConfig;
-use Rector\Set\ValueObject\LevelSetList;
 
 return static function (RectorConfig $rectorConfig): void {
-    $rectorConfig->symfonyContainerXml(__DIR__ . '/var/cache/dev/App_KernelDevDebugContainer.xml');
-
     $rectorConfig->sets([
-        LevelSetList::UP_TO_PHP_80
+        DoctrineSetList::ANNOTATIONS_TO_ATTRIBUTES,
+        SymfonySetList::ANNOTATIONS_TO_ATTRIBUTES,
+        NetteSetList::ANNOTATIONS_TO_ATTRIBUTES,
+        SensiolabsSetList::FRAMEWORK_EXTRA_61,
     ]);
 };
