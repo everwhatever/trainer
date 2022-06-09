@@ -10,26 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/Comment/CreateCommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/Comment/CreateCommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/Comment/DeleteCommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/Comment/DeleteCommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/CreatePostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/CreatePostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/DeletePostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/DeletePostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/DisplayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/DisplayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/EditPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/EditPostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/CreateOfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/CreateOfferController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DeleteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DeleteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayAllController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayAllController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayOneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayOneController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/EditController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/EditController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Shared/UI/Controller/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Shared/UI/Controller/HomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/CreateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/CreateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/DisplayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/DisplayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/EditController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/EditController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/Contact/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/Contact/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/Security/EmailVerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/Security/EmailVerificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/Security/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/Security/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/UserProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/UserProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/user.ibd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,10 +62,14 @@
     <setting file="file://$PROJECT_DIR$/app/rector.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Application/Handler/Command/PostCreationHandler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Application/Message/Command/PostCreationMessage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Blog/Application/Service/UserInfoApiGetter.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Domain/Model/Comment.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Domain/Model/Post.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Blog/Domain/Service/CommentSaver.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Domain/Service/PostSaver.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Blog/UI/Controller/Comment/CreateCommentController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/UI/Controller/CreatePostController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Blog/UI/Controller/DisplayController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Product/Application/Handler/Command/CreateOfferHandler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Product/Application/Message/Command/CreateOfferMessage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Product/Domain/Model/Offer.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -115,6 +100,8 @@
     <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/DisplayController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/EditController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/Security/RegistrationController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/Security/ResetPasswordController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/UserInfoController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/User/UI/Controller/UserProfileController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/templates/blog/create_post.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/templates/blog/edit_post.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -254,16 +241,12 @@
       <path value="$PROJECT_DIR$/app/vendor/sebastian/environment" />
       <path value="$PROJECT_DIR$/app/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/app/vendor/doctrine/data-fixtures" />
-      <path value="$PROJECT_DIR$/app/vendor/symfony/doctrine-messenger" />
-      <path value="$PROJECT_DIR$/app/vendor/symfony/redis-messenger" />
-      <path value="$PROJECT_DIR$/app/vendor/symfony/amqp-messenger" />
-      <path value="$PROJECT_DIR$/app/vendor/symfony/security-guard" />
-      <path value="$PROJECT_DIR$/app/vendor/overblog/graphql-bundle" />
-      <path value="$PROJECT_DIR$/app/vendor/murtukov/php-code-generator" />
-      <path value="$PROJECT_DIR$/app/vendor/symfony/expression-language" />
-      <path value="$PROJECT_DIR$/app/vendor/webonyx/graphql-php" />
       <path value="$PROJECT_DIR$/app/vendor/phpstan/phpstan" />
       <path value="$PROJECT_DIR$/app/vendor/rector/rector" />
+      <path value="$PROJECT_DIR$/app/vendor/overblog/graphql-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/webonyx/graphql-php" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/app/vendor/murtukov/php-code-generator" />
     </include_path>
   </component>
   <component name="ProjectId" id="25abcFOodUjZbXMpK7BGIG2Y2sC" />
@@ -316,7 +299,7 @@
       <workItem from="1652157051863" duration="3130000" />
       <workItem from="1652246021337" duration="1274000" />
       <workItem from="1653887188566" duration="4533000" />
-      <workItem from="1654576137202" duration="2944000" />
+      <workItem from="1654576137202" duration="6875000" />
     </task>
     <task id="LOCAL-00001" summary="git blog">
       <created>1647498722425</created>
