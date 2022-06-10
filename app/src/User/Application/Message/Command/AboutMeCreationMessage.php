@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\File\File;
 
 class AboutMeCreationMessage
 {
-    public function __construct(private File $photo, private AboutMe $aboutMe)
+    public function __construct(private readonly File $photo, private readonly AboutMe $aboutMe)
     {
     }
 

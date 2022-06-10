@@ -17,7 +17,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CreateController extends AbstractController
 {
-    public function __construct(private MessageBusInterface $commandBus)
+    public function __construct(private readonly MessageBusInterface $commandBus)
     {
     }
 

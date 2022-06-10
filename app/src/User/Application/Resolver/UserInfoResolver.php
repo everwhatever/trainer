@@ -11,7 +11,7 @@ use Overblog\GraphQLBundle\Definition\Resolver\QueryInterface;
 
 class UserInfoResolver implements QueryInterface
 {
-    public function __construct(private UserRepository $userRepository, private NameCasingTransformer $casingTransformer)
+    public function __construct(private readonly UserRepository $userRepository, private readonly NameCasingTransformer $casingTransformer)
     {
     }
 

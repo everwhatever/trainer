@@ -11,7 +11,7 @@ use Doctrine\ORM\EntityManagerInterface;
 
 class DisplayPostInfoFetcher
 {
-    public function __construct(private UserInfoApiGetter $apiGetter, private EntityManagerInterface $entityManager)
+    public function __construct(private readonly UserInfoApiGetter $apiGetter, private readonly EntityManagerInterface $entityManager)
     {
     }
 

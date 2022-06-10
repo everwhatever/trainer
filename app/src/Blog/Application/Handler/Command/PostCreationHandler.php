@@ -10,7 +10,7 @@ use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
 class PostCreationHandler implements MessageHandlerInterface
 {
-    public function __construct(private PostSaver $postSaver)
+    public function __construct(private readonly PostSaver $postSaver)
     {
     }
 

@@ -10,7 +10,7 @@ use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
 class AboutMeCreationHandler implements MessageHandlerInterface
 {
-    public function __construct(private AboutMeCreatorService $aboutMeCreator)
+    public function __construct(private readonly AboutMeCreatorService $aboutMeCreator)
     {
     }
 

@@ -8,9 +8,9 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 class VerifyEmailEvent extends Event
 {
-    public const NAME = 'user.email_verified';
+    final public const NAME = 'user.email_verified';
 
-    public function __construct(private string $userEmail, private string $userId)
+    public function __construct(private readonly string $userEmail, private readonly string $userId)
     {
     }
 

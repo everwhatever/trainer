@@ -6,7 +6,7 @@ namespace App\Blog\Application\Service;
 
 class UserInfoApiGetter
 {
-    public function __construct(private string $localhostAddress, private string $graphqlUserInfoAddress)
+    public function __construct(private readonly string $localhostAddress, private readonly string $graphqlUserInfoAddress)
     {
     }
 

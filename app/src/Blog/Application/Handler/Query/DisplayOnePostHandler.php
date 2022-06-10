@@ -11,7 +11,7 @@ use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
 class DisplayOnePostHandler implements MessageHandlerInterface
 {
-    public function __construct(private DisplayPostInfoFetcher $infoFetcher)
+    public function __construct(private readonly DisplayPostInfoFetcher $infoFetcher)
     {
     }
 

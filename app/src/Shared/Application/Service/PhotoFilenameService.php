@@ -10,7 +10,7 @@ use Symfony\Component\String\Slugger\SluggerInterface;
 
 class PhotoFilenameService
 {
-    public function __construct(private SluggerInterface $slugger, private string $photoDirectory)
+    public function __construct(private readonly SluggerInterface $slugger, private readonly string $photoDirectory)
     {
     }
 

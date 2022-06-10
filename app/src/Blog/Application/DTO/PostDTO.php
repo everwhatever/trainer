@@ -8,7 +8,7 @@ use App\Blog\Domain\Model\Post;
 
 class PostDTO
 {
-    private function __construct(private string $title, private string $content, private int $postId, private array $comments, private array $authorInfo)
+    private function __construct(private readonly string $title, private readonly string $content, private readonly int $postId, private readonly array $comments, private readonly array $authorInfo)
     {
     }
 

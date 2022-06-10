@@ -18,7 +18,7 @@ use Symfony\Component\Security\Http\Authentication\UserAuthenticatorInterface;
 
 class RegistrationController extends AbstractController
 {
-    public function __construct(private MessageBusInterface $commandBus, private UserAuthenticatorInterface $authenticator, private SecurityAuthenticator $securityAuthenticator)
+    public function __construct(private readonly MessageBusInterface $commandBus, private readonly UserAuthenticatorInterface $authenticator, private readonly SecurityAuthenticator $securityAuthenticator)
     {
     }
 

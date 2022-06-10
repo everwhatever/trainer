@@ -9,7 +9,7 @@ use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
 class UserCreationHandler implements MessageHandlerInterface
 {
-    public function __construct(private UserCreatorService $userCreator)
+    public function __construct(private readonly UserCreatorService $userCreator)
     {
     }
 

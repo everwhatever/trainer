@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class EmailVerificationController extends AbstractController
 {
-    public function __construct(private MessageBusInterface $commandBus)
+    public function __construct(private readonly MessageBusInterface $commandBus)
     {
     }
 

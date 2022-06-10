@@ -10,7 +10,7 @@ use Doctrine\ORM\EntityManagerInterface;
 
 class CommentSaver
 {
-    public function __construct(private EntityManagerInterface $entityManager)
+    public function __construct(private readonly EntityManagerInterface $entityManager)
     {
     }
 

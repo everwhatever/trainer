@@ -4,7 +4,7 @@ namespace App\User\Application\Message\Command;
 
 class UserCreationMessage
 {
-    public function __construct(private string $email, private string $plainPassword, private $role)
+    public function __construct(private readonly string $email, private readonly string $plainPassword, private $role)
     {
     }
 

@@ -6,7 +6,7 @@ namespace App\User\Application\Message\Command;
 
 class EmailVerificationMessage
 {
-    public function __construct(private string $requestUri, private string $userId, private string $userEmail)
+    public function __construct(private readonly string $requestUri, private readonly string $userId, private readonly string $userEmail)
     {
     }
 

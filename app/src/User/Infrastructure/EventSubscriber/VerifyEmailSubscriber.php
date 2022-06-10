@@ -14,7 +14,7 @@ use SymfonyCasts\Bundle\VerifyEmail\VerifyEmailHelperInterface;
 
 class VerifyEmailSubscriber implements EventSubscriberInterface
 {
-    public function __construct(private VerifyEmailHelperInterface $verifyEmailHelper, private MailerInterface $mailer)
+    public function __construct(private readonly VerifyEmailHelperInterface $verifyEmailHelper, private readonly MailerInterface $mailer)
     {
     }
 

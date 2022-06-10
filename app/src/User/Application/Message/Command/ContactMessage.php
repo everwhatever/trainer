@@ -6,7 +6,7 @@ namespace App\User\Application\Message\Command;
 
 class ContactMessage
 {
-    public function __construct(private array $data)
+    public function __construct(private readonly array $data)
     {
     }
 

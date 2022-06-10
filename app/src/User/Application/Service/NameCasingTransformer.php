@@ -20,7 +20,7 @@ class NameCasingTransformer
     {
         $snakeCaseResult = [];
         foreach ($result as $key => $value) {
-            $snakeCaseKey = strtolower(preg_replace('/(?<!^)[A-Z]/', '_$0', $key));
+            $snakeCaseKey = strtolower((string) preg_replace('/(?<!^)[A-Z]/', '_$0', $key));
             $snakeCaseResult[$snakeCaseKey] = $value;
         }
 
