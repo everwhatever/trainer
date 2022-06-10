@@ -130,6 +130,7 @@
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/webonyx/graphql-php" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/expression-language" />
       <excludeFolder url="file://$MODULE_DIR$/app/vendor/murtukov/php-code-generator" />
+      <excludeFolder url="file://$MODULE_DIR$/app/vendor/symfony/amqp-messenger" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

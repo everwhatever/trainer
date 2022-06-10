@@ -5,23 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/trainer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trainer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/.php-cs-fixer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/.php-cs-fixer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/rector.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/rector.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/Domain/Model/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Domain/Model/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/Domain/Model/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Domain/Model/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/CreatePostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/CreatePostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/EditPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/EditPostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/Domain/Model/Offer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/Domain/Model/Offer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/CreateOfferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/CreateOfferController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DeleteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DeleteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/EditController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/EditController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Domain/Model/AboutMe.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Domain/Model/AboutMe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Domain/Model/Security/ResetPasswordRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Domain/Model/Security/ResetPasswordRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Domain/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Domain/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/CreateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/CreateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/DisplayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/DisplayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/EditController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/EditController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/false," beforeDir="false" afterPath="$PROJECT_DIR$/app/false," afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tools/php-cs-fixer/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/tools/php-cs-fixer/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tools/php-cs-fixer/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/tools/php-cs-fixer/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/true," beforeDir="false" afterPath="$PROJECT_DIR$/app/true," afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000021" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000021" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,6 +272,7 @@
       <path value="$PROJECT_DIR$/app/vendor/webonyx/graphql-php" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/expression-language" />
       <path value="$PROJECT_DIR$/app/vendor/murtukov/php-code-generator" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/amqp-messenger" />
     </include_path>
   </component>
   <component name="ProjectId" id="25abcFOodUjZbXMpK7BGIG2Y2sC" />
@@ -310,7 +325,7 @@
       <workItem from="1652157051863" duration="3130000" />
       <workItem from="1652246021337" duration="1274000" />
       <workItem from="1653887188566" duration="4533000" />
-      <workItem from="1654576137202" duration="7934000" />
+      <workItem from="1654576137202" duration="9667000" />
     </task>
     <task id="LOCAL-00001" summary="git blog">
       <created>1647498722425</created>
