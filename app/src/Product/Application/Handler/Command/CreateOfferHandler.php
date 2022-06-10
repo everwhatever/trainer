@@ -17,8 +17,8 @@ class CreateOfferHandler implements MessageHandlerInterface
 
     public function __invoke(CreateOfferMessage $message): void
     {
-        $photo = $message->getPhoto();
-        $offer = $message->getOffer();
+        $photo = $message->photo;
+        $offer = $message->offer;
 
         $newFilename = $this->filenameService->preparePhotoFilename($photo);
 

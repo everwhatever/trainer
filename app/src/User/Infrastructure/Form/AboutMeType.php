@@ -41,6 +41,7 @@ class AboutMeType extends AbstractType
             ])
             ->add('isActive', CheckboxType::class, [
                 'label' => 'Ustaw jak aktywny',
+                'required' => false
             ])
             ->add('submit', SubmitType::class, [
                 'label' => 'Zapisz',

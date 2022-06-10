@@ -16,7 +16,7 @@ class CommentCreationHandler implements MessageHandlerInterface
 
     public function __invoke(CommentCreationMessage $message): void
     {
-        $this->commentSaver->saveComment($message->getComment(),
-            $message->getUserId(), $message->getPostId());
+        $this->commentSaver->saveComment($message->comment,
+            $message->userId, $message->postId);
     }
 }

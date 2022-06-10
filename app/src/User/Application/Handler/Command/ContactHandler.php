@@ -22,7 +22,7 @@ class ContactHandler implements MessageHandlerInterface
      */
     public function __invoke(ContactMessage $message)
     {
-        $data = $message->getData();
+        $data = $message->data;
         $message = (new Email())
             ->from($data['email'])
             ->to('koszykarz.kuba@gmail.com')

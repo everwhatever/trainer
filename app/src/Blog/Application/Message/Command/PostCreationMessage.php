@@ -8,17 +8,7 @@ use App\Blog\Domain\Model\Post;
 
 class PostCreationMessage
 {
-    public function __construct(private readonly Post $post, private readonly ?int $userId)
+    public function __construct(public readonly Post $post, public readonly ?int $userId)
     {
-    }
-
-    public function getPost(): Post
-    {
-        return $this->post;
-    }
-
-    public function getUserId(): int
-    {
-        return $this->userId;
     }
 }

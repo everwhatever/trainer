@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2de641c5-2a28-4bfa-a650-0ffe190e1a95" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/rector.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/rector.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Blog/Application/DTO/PostDTO.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Application/DTO/PostDTO.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Blog/Application/Handler/Command/CommentCreationHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Application/Handler/Command/CommentCreationHandler.php" afterDir="false" />
@@ -17,63 +14,23 @@
       <change beforePath="$PROJECT_DIR$/app/src/Blog/Application/Message/Command/CommentCreationMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Application/Message/Command/CommentCreationMessage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Blog/Application/Message/Command/PostCreationMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Application/Message/Command/PostCreationMessage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Blog/Application/Message/Query/DisplayOnePostQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Application/Message/Query/DisplayOnePostQuery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/Application/Service/DisplayPostInfoFetcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Application/Service/DisplayPostInfoFetcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/Application/Service/UserInfoApiGetter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Application/Service/UserInfoApiGetter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/Domain/Service/CommentSaver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Domain/Service/CommentSaver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/Domain/Service/PostSaver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/Domain/Service/PostSaver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/Comment/DeleteCommentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/Comment/DeleteCommentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/DeletePostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/DeletePostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/DisplayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/DisplayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Blog/UI/Controller/EditPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Blog/UI/Controller/EditPostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Product/Application/Handler/Command/CreateOfferHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/Application/Handler/Command/CreateOfferHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/Product/Application/Message/Command/CreateOfferMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/Application/Message/Command/CreateOfferMessage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DeleteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DeleteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayAllController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayAllController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayOneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Product/UI/Controller/Offer/DisplayOneController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Shared/Application/Service/PhotoFilenameService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Shared/Application/Service/PhotoFilenameService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Shared/UI/Controller/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Shared/UI/Controller/HomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Application/Event/VerifyEmailEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Event/VerifyEmailEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Application/Handler/Command/AboutMeCreationHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Handler/Command/AboutMeCreationHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/User/Application/Handler/Command/ContactHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Handler/Command/ContactHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/User/Application/Handler/Command/EmailVerificationHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Handler/Command/EmailVerificationHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/User/Application/Handler/Command/UserCreationHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Handler/Command/UserCreationHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Application/Message/Command/AboutMeCreationMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Message/Command/AboutMeCreationMessage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/User/Application/Message/Command/ContactMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Message/Command/ContactMessage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/User/Application/Message/Command/EmailVerificationMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Message/Command/EmailVerificationMessage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/User/Application/Message/Command/UserCreationMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Message/Command/UserCreationMessage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Application/Resolver/UserInfoResolver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Resolver/UserInfoResolver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Application/Service/NameCasingTransformer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Application/Service/NameCasingTransformer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Domain/Service/AboutMeCreatorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Domain/Service/AboutMeCreatorService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Domain/Service/UserCreatorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Domain/Service/UserCreatorService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Infrastructure/EventSubscriber/VerifyEmailSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Infrastructure/EventSubscriber/VerifyEmailSubscriber.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/Infrastructure/Security/SecurityAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Infrastructure/Security/SecurityAuthenticator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/CreateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/CreateController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/DisplayController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/DisplayController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/EditController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/AboutMe/EditController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/Contact/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/Contact/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/Security/EmailVerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/Security/EmailVerificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/Security/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/Security/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/Security/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/Security/ResetPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/User/UI/Controller/UserProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/UI/Controller/UserProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/User/Infrastructure/Form/AboutMeType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/User/Infrastructure/Form/AboutMeType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000022" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000022" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000023" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000023" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibtmp1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/about_me.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/about_me.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/trainer_docker/comment.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/trainer_docker/comment.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
     </list>
@@ -125,6 +82,7 @@
     <setting file="file://$PROJECT_DIR$/app/migrations/Version20220511052009.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/migrations/Version20220511052748.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/rector.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/src/Blog/Application/Handler/Command/CommentCreationHandler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Application/Handler/Command/PostCreationHandler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Application/Message/Command/CommentCreationMessage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/src/Blog/Application/Message/Command/PostCreationMessage.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -367,7 +325,7 @@
       <workItem from="1652157051863" duration="3130000" />
       <workItem from="1652246021337" duration="1274000" />
       <workItem from="1653887188566" duration="4533000" />
-      <workItem from="1654576137202" duration="12202000" />
+      <workItem from="1654576137202" duration="14581000" />
     </task>
     <task id="LOCAL-00001" summary="git blog">
       <created>1647498722425</created>

@@ -16,6 +16,6 @@ class PostCreationHandler implements MessageHandlerInterface
 
     public function __invoke(PostCreationMessage $message): void
     {
-        $this->postSaver->savePost($message->getPost(), $message->getUserId());
+        $this->postSaver->savePost($message->post, $message->userId);
     }
 }

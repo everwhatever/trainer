@@ -17,6 +17,6 @@ class DisplayOnePostHandler implements MessageHandlerInterface
 
     public function __invoke(DisplayOnePostQuery $query): PostDTO
     {
-        return $this->infoFetcher->fetch($query->getPostId());
+        return $this->infoFetcher->fetch($query->postId);
     }
 }

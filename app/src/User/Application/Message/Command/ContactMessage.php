@@ -6,12 +6,7 @@ namespace App\User\Application\Message\Command;
 
 class ContactMessage
 {
-    public function __construct(private readonly array $data)
+    public function __construct(public readonly array $data)
     {
-    }
-
-    public function getData(): array
-    {
-        return $this->data;
     }
 }

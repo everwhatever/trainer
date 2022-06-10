@@ -15,6 +15,6 @@ class UserCreationHandler implements MessageHandlerInterface
 
     public function __invoke(UserCreationMessage $message): User
     {
-        return $this->userCreator->createUser($message->getEmail(), $message->getPlainPassword(), $message->getRole());
+        return $this->userCreator->createUser($message->email, $message->plainPassword, $message->role);
     }
 }

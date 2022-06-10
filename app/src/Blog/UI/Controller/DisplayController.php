@@ -35,16 +35,16 @@ class DisplayController extends AbstractController
     public function displayOnePostAction(int $id): Response
     {
         $postDTO = $this->query($id);
-        $authorInfo = $postDTO->getAuthorInfo();
+        $authorInfo = $postDTO->authorInfo;
 
         return $this->render('blog/display_one_post.html.twig', [
-            'title' => $postDTO->getTitle(),
-            'content' => $postDTO->getContent(),
+            'title' => $postDTO->title,
+            'content' => $postDTO->content,
             'author_first_name' => $authorInfo['first_name'] ?? '',
             'author_email' => $authorInfo['email'] ?? '',
             'author_last_name' => $authorInfo['last_name'] ?? '',
-            'comments' => $postDTO->getComments(),
-            'post_id' => $postDTO->getPostId(),
+            'comments' => $postDTO->comments,
+            'post_id' => $postDTO->postId,
         ]);
     }
 

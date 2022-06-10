@@ -9,17 +9,7 @@ use Symfony\Component\HttpFoundation\File\File;
 
 class CreateOfferMessage
 {
-    public function __construct(private readonly File $photo, private readonly Offer $offer)
+    public function __construct(public readonly File $photo, public readonly Offer $offer)
     {
-    }
-
-    public function getPhoto(): File
-    {
-        return $this->photo;
-    }
-
-    public function getOffer(): Offer
-    {
-        return $this->offer;
     }
 }

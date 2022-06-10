@@ -6,12 +6,7 @@ namespace App\Blog\Application\Message\Query;
 
 class DisplayOnePostQuery
 {
-    public function __construct(private readonly int $postId)
+    public function __construct(public readonly int $postId)
     {
-    }
-
-    public function getPostId(): int
-    {
-        return $this->postId;
     }
 }

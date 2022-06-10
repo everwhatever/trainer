@@ -24,7 +24,7 @@ class EmailVerificationHandler implements MessageHandlerInterface
      */
     public function __invoke(EmailVerificationMessage $message): void
     {
-        $userId = $message->getUserId();
+        $userId = $message->userId;
 
         $this->validateEmail($message);
 
@@ -38,9 +38,9 @@ class EmailVerificationHandler implements MessageHandlerInterface
     private function validateEmail(EmailVerificationMessage $message): void
     {
         try {
-            $this->verifyEmailHelper->validateEmailConfirmation($message->getRequestUri(),
-                $message->getUserId(),
-                $message->getUserEmail());
+            $this->verifyEmailHelper->validateEmailConfirmation($message->requestUri,
+                $message->userId,
+                $message->userEmail);
         } catch (WrongEmailVerifyException $exception) {
             throw $exception->getReason();
         } catch (Exception $e) {

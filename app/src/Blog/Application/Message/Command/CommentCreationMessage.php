@@ -8,22 +8,7 @@ use App\Blog\Domain\Model\Comment;
 
 class CommentCreationMessage
 {
-    public function __construct(private readonly Comment $comment, private readonly int $userId, private readonly int $postId)
+    public function __construct(public readonly Comment $comment, public readonly int $userId, public readonly int $postId)
     {
-    }
-
-    public function getComment(): Comment
-    {
-        return $this->comment;
-    }
-
-    public function getUserId(): int
-    {
-        return $this->userId;
-    }
-
-    public function getPostId(): int
-    {
-        return $this->postId;
     }
 }
